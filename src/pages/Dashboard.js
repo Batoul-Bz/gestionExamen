@@ -1,7 +1,7 @@
 
 import React from 'react';
 import Sidebar from '../components/Sidebar';
-import Header from '../components/Header';
+import Header from '../components/Topbar';
 import StatsCards from '../components/StatsCards';
 import BarChart from '../components/BarChart';
 import LineChart from '../components/LineChart';
