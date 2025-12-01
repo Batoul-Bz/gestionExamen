@@ -1,0 +1,27 @@
+
+.history {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.history h3 {
+  margin-bottom: 15px;
+  color: #0b1a57;
+}
+
+.history ul {
+  list-style: none;
+  padding: 0;
+}
+
+.history ul li {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f0f3fa;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
