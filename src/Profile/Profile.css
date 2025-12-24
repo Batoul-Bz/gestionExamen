@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Edu+QLD+Hand:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lobster&family=Lora:ital,wght@0,400..700;1,400..700&family=Meie+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif+Khojki:wght@400..700&family=Playwrite+CA:wght@100..400&family=Playwrite+CZ:wght@100..400&family=Readex+Pro:wght@160..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+#root {
+    margin: 0px;
+    width: 100vw;
+    min-height: 100vh;
+    overflow-x:hidden ;
+     background-color:rgb(215, 215, 218);
+     position: fixed;
+    
+}
+
+.right-container {
+   
+   background-color:white;
+  width: 35%;
+  height: 40%;
+  padding: 20px;
+  position: absolute;
+  right: 5%;
+  top: 20%;
+  color:rgba(7, 30, 106, 1) ;
+  border-radius: 50px;
+  font-size: 18px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+  text-shadow: 2px 2px 5px rgba(69, 69, 85, 0.664);
+  z-index: 1;
+}
+.right-container ul{
+list-style-type: none;
+
+width: 80%;
+height: 100%;
+}
+
+hr{
+    color:rgb(215, 215, 218);
+     box-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+}
+.right-container span{
+    font-size: 15px;
+    margin-left: 3%;
+    font-family: "  Edu QLD Hand", sans-serif;
+color:rgb(8, 38, 136) ;
+}
+.email-container{
+     background-color:white;
+  width: 35%;
+  height: 20%;
+  padding: 20px;
+   position: absolute;
+  right: 5%;
+  top: 73%;
+  color:rgba(7, 30, 106, 1) ;
+  border-radius: 50px;
+  font-size: 18px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+  text-shadow: 2px 2px 5px rgba(69, 69, 85, 0.664);
+  z-index: 1;
+  
+}
+.email-container ul{
+list-style: none;
+}
+.email-container span{
+    font-size: 15px;
+    margin-left: 3%;
+    font-family: "  Edu QLD Hand", sans-serif;
+color:rgb(8, 38, 136) ;
+}
+.leftcontainer{
+       background-color:white;
+  width: 25%;
+  min-height: 100%;
+  padding: 20px;
+   position: absolute;
+  left: 23%;
+  top: 20%;
+  color:rgba(7, 30, 106, 1) ;
+  border-radius: 50px;
+  font-size: 18px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+  text-shadow: 2px 2px 5px rgba(69, 69, 85, 0.664);
+  z-index: 3;
+ 
+}
+.leftcontainer ul{
+    list-style: none;
+   width: 90%;
+   height: 100%;
+    display: flex;
+  flex-direction: column; 
+  align-items: center;
+ 
+}
+.leftcontainer img{
+    width: 150px;
+    height: 150px;
+    border-radius: 70px;
+    margin-left: auto;
+     margin-right: auto;
+    
+}
+.leftcontainer .name{
+    font-size: 25px;
+    text-shadow: 2px 2px 5px rgba(69, 69, 85, 0.664);
+   
+    margin-left: auto;
+     margin-right: auto;
+}
+
+
+.leftcontainer li {
+    width: 100%;
+ height: 50%;
+ margin-left: 0%;
+ position: relative;
+ left: 0%;
+
+}
+.leftcontainer p{
+    font-size: 20px;
+    color: rgb(168, 168, 172);
+   
+    margin-left: 30%;
+    margin-bottom: 20%;
+    margin-top: 0%;
+   
+}
+.leftcontainer .name{
+    font-size: 25px;
+    text-shadow: 2px 2px 5px rgba(69, 69, 85, 0.664);
+   
+    margin-left: 15%;
+     margin-right: auto;
+     margin-top: 5%;
+}
+
+.leftcontainer .image{
+
+ 
+ width: 70%;
+ height: 50%;
+ 
+}
+.leftcontainer .form{   
+    padding-bottom:5px ;
+     padding-top:5px ;
+    border-width: 1px;
+   border-radius: 10px;
+    border-style: solid;
+   padding-left: 15px;
+   width: 85%;
+   margin-right: 10%;
+}
+.leftcontainer button{
+    background-color: rgba(7, 30, 106, 1);
+    width: 90%;
+    padding-top:10px ;
+    padding-bottom: 10px;
+    color: white;
+    border-style: none;
+    margin-top: 10%;
+    border-radius: 50px;
+    font-size: 20px;
+}
+.leftcontainer button:hover{
+    background-color:  rgb(168, 168, 172);
+    color:rgba(7, 30, 106, 1) ;
+    transition: background-color  0.3s ease,color 0.3s ease ; 
+}
+.popupform{
+    background-color: white;
+    width: 90%;
+    height: 80%;
+    position: absolute;
+    left: 75%;
+    top: 10%;
+    padding: 5px;
+    border-radius: 50px;
+    z-index: 2;
+     box-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+}
+.popupform .formpopup{
+ 
+   width:90%;
+   height: 90%;
+ padding: 15px;
+}
+.popupform .formpopup form{
+     width:90%;
+   height: 90%;
+ 
+   padding: 15px;
+   margin-top: 10%;
+display: flex;
+flex-direction: column;
+  justify-content:space-evenly ; 
+  height: 100%; 
+}
+.popupform .formpopup form label{
+    font-size: 20px;
+}
+.popupform .formpopup form input{
+    border-style: solid;
+    border-width: 1px;
+    border-color:rgba(7, 30, 106, 1)  ;
+    border-radius: 10px;
+    padding-bottom:10px ;
+    padding-top: 10px;
+
+}
+.popupform .formpopup form div{
+    display: flex;
+    justify-content: space-between;
+}
+.popupform .formpopup form .buttonform{
+    width: 40%;
+    font-size: 17px;
+    background-color:rgb(168, 168, 172); ;
+}
+.popupform .formpopup form .buttonform:hover{
+     background-color:rgba(7, 30, 106, 1)  ;
+     color: white;
+     transition: background-color  0.3s ease,color 0.3s ease ; 
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+}
+.overlay {
+  position: fixed;
+  top: 0px; 
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3); 
+  z-index: 1; 
+}
