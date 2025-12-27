@@ -1,0 +1,82 @@
+.sidebar {
+  width: 60px;
+  background-color: #0b1a57;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 8px;
+  transition: width 0.35s ease;
+  overflow: hidden;
+}
+
+/* Expand on hover */
+.sidebar:hover {
+  width: 230px;
+}
+
+
+.sidebar nav ul,
+.bottom-icons ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 50px;
+}
+
+
+.menu-item,
+.menu-toggle {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 14px 0;
+  cursor: pointer;
+  padding: 12px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+
+.icon {
+  font-size: 1.6rem;
+  min-width: 40px;
+  text-align: center;
+  color: #fff;
+}
+
+
+.label {
+  opacity: 0;
+  white-space: nowrap;
+  transition: opacity 0.3s ease;
+}
+
+.sidebar:hover .label {
+  opacity: 1;
+}
+
+
+.menu-item:hover,
+.menu-toggle:hover {
+  background-color: #1a2a6c;
+  transform: translateX(4px);
+}
+
+
+.menu-item.active {
+  background-color: #f6eded;
+  color: #0b1a57;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  margin-right: -16px;
+  padding-right: 16px;
+}
+
+.menu-item.active .icon {
+  color: #0b1a57;
+}
+
+
+.bottom-icons {
+  margin-bottom: 20px;
+}

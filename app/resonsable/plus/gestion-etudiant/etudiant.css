@@ -1,0 +1,155 @@
+.ens-wrapper {
+  width: 100%;
+  min-height: calc(100vh - 70px);
+  background: #f0f3ff;
+  padding: 26px 40px;
+}
+
+
+.ens-header-bar {
+  background: #fbeff5;
+  border-radius: 26px 26px 0 0;
+  padding: 20px 28px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.btn-retourne {
+padding: 8px 14px;
+border-radius: 999px;
+border: 1px solid #d1d5db;
+background: #f9fafb;
+font-size: 13px;
+cursor: pointer;
+color: #374151;
+transition: background 0.15s ease, color 0.15s ease, transform 0.1s ease;
+}
+
+.ens-title {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  gap: 10px;              
+  font-size: 26px;
+  font-weight: 700;
+  color: #10245f;
+}
+
+.ens-title-icon {
+  width: 32px;   
+  height: 32px;
+}
+
+
+.ens-actions-right {
+  display: flex;
+  gap: 16px;
+}
+
+.ens-btn {
+  min-width: 140px;
+  padding: 10px 22px;
+  border-radius: 20px;
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  font-size: 16px;
+}
+
+.btn-importer,
+.btn-ajouter {
+  background: #36a9ff;
+}
+
+
+.ens-list {
+  margin-top: 14px;
+}
+
+
+.ens-row {
+  background: #ffffff;
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 1.1fr 1.2fr 0.9fr 0.7fr;
+  padding: 12px 24px;
+  align-items: center;
+  font-size: 15px;
+  color: #111;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  margin-bottom: 10px;
+  border-radius: 18px;
+}
+
+.ens-row-alt {
+  background: #dde9ff;
+}
+
+.ens-cell {
+  text-align: left;
+}
+
+.ens-cell.wide input {
+  font-weight: 700;
+}
+
+
+.ens-cell input {
+  width: 100%;
+  border-radius: 12px;
+  border: none;
+  padding: 6px 10px;
+  font-size: 14px;
+  background: transparent;
+}
+
+.ens-cell input:disabled {
+  cursor: default;
+}
+
+
+.ens-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+ 
+
+.row-icon-btn {
+  width: 38px;
+  height: 38px;
+  border-radius: 12px;
+  border: none;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.18);
+}
+
+.row-icon-btn img {
+  width: 18px;
+  height: 18px;
+}
+
+
+.content {
+  margin-top: 70px;
+  margin-left: 80px;
+  padding: 0;
+  transition: margin-left 0.3s ease;
+}
+.content-open {
+  margin-left: 220px;
+}
+.ens-cell input {
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid #ccc;   
+  padding: 6px 10px;
+  font-size: 14px;
+  background: #fff;         
+}
