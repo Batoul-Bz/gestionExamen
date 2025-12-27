@@ -1,0 +1,111 @@
+/* ===== Layout ===== */
+.layout {
+  display: flex;
+}
+
+.topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 70px;
+  width: 100%;
+  z-index: 200;
+}
+
+.sidebar {
+  position: fixed;
+  top: 70px;
+  left: 0;
+  width: 60px;
+  height: calc(100vh - 70px);
+  z-index: 100;
+}
+
+.main {
+  margin-left: 60px;
+  margin-top: 70px;
+  width: calc(100% - 60px);
+  min-height: calc(100vh - 70px);
+  background: #f3f6fd;
+  transition: all 0.3s ease;
+}
+
+/* لما sidebar تتفتح */
+.sidebar:hover ~ .main {
+  margin-left: 220px;
+  width: calc(100% - 220px);
+}
+
+/* ===== Page ===== */
+.teacher-planning-page {
+  padding: 25px;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(to right, #f0f4ff, #e0f7fa);
+  min-height: calc(100vh - 110px);
+  box-sizing: border-box;
+}
+
+.teacher-planning-page h2 {
+  margin-bottom: 25px;
+  color: #0b2c73;
+}
+
+/* ===== Buttons ===== */
+.buttons-row {
+  margin-bottom: 20px;
+}
+
+.btn-print,
+.btn-pdf {
+  background: linear-gradient(135deg, #0b2c73, #084b9b);
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  margin-right: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: transform 0.2s;
+}
+
+.btn-print:hover,
+.btn-pdf:hover {
+  transform: translateY(-2px);
+}
+
+/* ===== Table ===== */
+.table-container {
+  overflow-x: auto;
+}
+
+.planning-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.planning-table th,
+.planning-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.planning-table th {
+  background: #0b2c73;
+  color: #fff;
+}
+
+.planning-table tr:hover td {
+  background: #e0f7fa;
+}
+
+
+.no-data {
+  text-align: center;
+  margin-top: 30px;
+  font-style: italic;
+  color: #555;
+}

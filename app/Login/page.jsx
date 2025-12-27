@@ -68,7 +68,7 @@ export default function LoginPage() {
               />
             </div>
 
-            <button type="submit" className="submit-btn" onClick={() => router.push("/chef_departement/profile")}>
+            <button type="submit" className="submit-btn" onClick={() => router.push("/proffesseurs")}>
               ✓
             </button>
           </form>

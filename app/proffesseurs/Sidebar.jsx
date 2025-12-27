@@ -17,9 +17,9 @@ export default function Sidebar() {
   const pathname = usePathname();
 
   const menuItems = [
-    { label: "Profil", icon: <FaUser />, path: "/chef_departement/profile" },
-    { label: "C & V", icon: <FaSearch />, path: "/chef_departement/Planning" },
-    { label: "Dashboard", icon: <FaChartBar />, path: "/chef_departement/dashboard" },
+    { label: "Profil", icon: <FaUser />, path: "/proffesseurs/profile" },
+    { label: "Emploi du temps", icon: <FaSearch />, path: "/proffesseurs/Planning" },
+    { label: "Dashboard", icon: <FaChartBar />, path: "/proffesseurs/dashboard" },
   ];
 
   return (

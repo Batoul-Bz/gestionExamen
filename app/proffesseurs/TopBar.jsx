@@ -25,7 +25,7 @@ export default function TopBar() {
           <div className="user-avatar"></div>
           <div>
             <div className="user-text-main">user Name</div>
-            <div className="user-text-sub">َAdministrateur</div>
+            <div className="user-text-sub">Ensegnant</div>
           </div>
         </button>
       </div>
