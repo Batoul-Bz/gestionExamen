@@ -1,8 +1,10 @@
+// SemestresPage.jsx
 "use client";
 
 import { useState } from "react";
 import TopBar from "../../../TopBar";
 import Sidebar from "../../../Sidebar";
+import { FaCalendarAlt, FaPlus, FaEdit, FaTrash } from "react-icons/fa";
 import "./semestres.css";
 
 export default function SemestresPage() {
@@ -19,16 +21,7 @@ export default function SemestresPage() {
 
   const addRow = () => {
     const newId = rows.length ? rows[rows.length - 1].id + 1 : 1;
-    setRows([
-      ...rows,
-      {
-        id: newId,
-        numero: newId,
-        semestre: "",
-        annee: "",
-        editing: true,
-      },
-    ]);
+    setRows([...rows, { id: newId, numero: newId, semestre: "", annee: "", editing: true }]);
   };
 
   const toggleEdit = (id) => {
@@ -48,33 +41,29 @@ export default function SemestresPage() {
       <TopBar />
 
       <div className="layout">
-        <Sidebar open={open} toggleOpen={toggleOpen} />
+        <div className={`sidebar ${open ? "open" : ""}`}>
+          <Sidebar toggleOpen={toggleOpen} open={open} />
+        </div>
 
-        <main className={`content ${open ? "content-open" : ""}`}>
+        <main className="content">
           <div className="sem-wrapper">
             <div className="sem-inner">
              
               <div className="sem-header">
                 <h2 className="sem-title">
-                  Semestres
-                  <img
-                    src="/icon/semestre-header.png"
-                    alt="semestres"
-                    className="sem-icon-img"
-                  />
+                  Semestres <FaCalendarAlt className="sem-icon-img" />
                 </h2>
               </div>
 
-              
               <div className="sem-actions">
                 <button className="sem-btn btn-add" onClick={addRow}>
-                  Ajouter <span className="circle">＋</span>
+                  Ajouter <FaPlus className="circle" />
                 </button>
                 <button
                   className="sem-btn btn-edit"
                   onClick={() => rows[0] && toggleEdit(rows[0].id)}
                 >
-                  Modifier <span className="circle">✎</span>
+                  Modifier <FaEdit className="circle" />
                 </button>
                 <button
                   className="sem-btn btn-delete"
@@ -82,11 +71,10 @@ export default function SemestresPage() {
                     rows.length && deleteRow(rows[rows.length - 1].id)
                   }
                 >
-                  Supprimer <span className="circle">🗑</span>
+                  Supprimer <FaTrash className="circle" />
                 </button>
               </div>
 
-            
               <div className="sem-table">
                 <div className="sem-row sem-row-head">
                   <div className="cell cell-num">Numéro</div>
@@ -100,7 +88,6 @@ export default function SemestresPage() {
                     className={`sem-row ${i % 2 === 1 ? "sem-row-alt" : ""}`}
                   >
                     <div className="cell cell-num value-cell">{r.numero}</div>
-
                     <div className="cell cell-sem value-cell">
                       <input
                         type="text"
@@ -111,7 +98,6 @@ export default function SemestresPage() {
                         }
                       />
                     </div>
-
                     <div className="cell cell-annee value-cell">
                       <input
                         type="text"

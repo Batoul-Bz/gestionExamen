@@ -1,8 +1,9 @@
+// AnneeUniversitairePage.jsx
 "use client";
-
 import { useState } from "react";
 import TopBar from "../../../TopBar";
 import Sidebar from "../../../Sidebar";
+import { FaCalendarAlt, FaPlus, FaEdit, FaTrash } from "react-icons/fa";
 import "./annee-universitaire.css";
 
 export default function AnneeUniversitairePage() {
@@ -18,10 +19,7 @@ export default function AnneeUniversitairePage() {
 
   const addRow = () => {
     const newId = rows.length ? rows[rows.length - 1].id + 1 : 1;
-    setRows([
-      ...rows,
-      { id: newId, numero: newId, label: "", editing: true },
-    ]);
+    setRows([...rows, { id: newId, numero: newId, label: "", editing: true }]);
   };
 
   const toggleEdit = (id) => {
@@ -39,47 +37,37 @@ export default function AnneeUniversitairePage() {
   return (
     <div className="page">
       <TopBar />
-
       <div className="layout">
-        <Sidebar open={open} toggleOpen={toggleOpen} />
-
-        <main className={`content ${open ? "content-open" : ""}`}>
+        <div className={`sidebar ${open ? "open" : ""}`}>
+          <Sidebar toggleOpen={toggleOpen} open={open} />
+        </div>
+        <main className="content">
           <div className="annee-wrapper">
             <div className="annee-inner">
-              {/* العنوان */}
               <div className="annee-header">
                 <h2 className="annee-title">
-                  Année universitaire
-                  <img
-                    src="/icon/calendrier.png"
-                    alt="année universitaire"
-                    className="annee-icon-img"
-                  />
+                  <FaCalendarAlt className="annee-icon-img" /> Année universitaire
                 </h2>
               </div>
 
-              
               <div className="annee-actions">
                 <button className="annee-btn btn-add" onClick={addRow}>
-                  Ajouter <span className="circle">＋</span>
+                  Ajouter <FaPlus className="circle" />
                 </button>
                 <button
                   className="annee-btn btn-edit"
                   onClick={() => rows[0] && toggleEdit(rows[0].id)}
                 >
-                  Modifier <span className="circle">✎</span>
+                  Modifier <FaEdit className="circle" />
                 </button>
                 <button
                   className="annee-btn btn-delete"
-                  onClick={() =>
-                    rows.length && deleteRow(rows[rows.length - 1].id)
-                  }
+                  onClick={() => rows.length && deleteRow(rows[rows.length - 1].id)}
                 >
-                  Supprimer <span className="circle">🗑</span>
+                  Supprimer <FaTrash className="circle" />
                 </button>
               </div>
 
-             
               <div className="annee-table">
                 <div className="annee-row annee-row-head">
                   <div className="cell cell-num">Numéro</div>
@@ -89,9 +77,7 @@ export default function AnneeUniversitairePage() {
                 {rows.map((r, i) => (
                   <div
                     key={r.id}
-                    className={`annee-row ${
-                      i % 2 === 1 ? "annee-row-alt" : ""
-                    }`}
+                    className={`annee-row ${i % 2 === 1 ? "annee-row-alt" : ""}`}
                   >
                     <div className="cell cell-num value-cell">{r.numero}</div>
                     <div className="cell cell-label value-cell">
