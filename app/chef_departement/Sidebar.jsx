@@ -9,7 +9,7 @@ import {
   FaChartBar,
   FaInfoCircle,
   FaSignOutAlt,
-  FaPlus,
+  
 } from "react-icons/fa";
 import "./SideBar.css";
 
@@ -18,10 +18,10 @@ export default function Sidebar({ open, toggleOpen }) {
   const pathname = usePathname();
 
   const menuItems = [
-    { label: "Gestion du profil", icon: <FaUser />, path: "/resonsable/profile" },
-    { label: "C & V", icon: <FaSearch />, path: "/resonsable/Planning" },
+    { label: "Gestion du profil", icon: <FaUser />, path: "/chef_departement/profile" },
+    { label: "C & V", icon: <FaSearch />, path: "/chef_departement/Planning" },
     { label: "Tableau de bord", icon: <FaChartBar />, path: "/resonsable/dashboard" },
-    { label: "Plus", icon: <FaPlus />, path: "/resonsable/plus" },
+    
   ];
 
   return (
