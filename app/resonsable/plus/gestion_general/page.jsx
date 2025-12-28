@@ -4,6 +4,12 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import TopBar from "./../../TopBar";
 import Sidebar from "./../../Sidebar";
+import { 
+  FaCalendarAlt, 
+  FaBook, 
+  FaLayerGroup, 
+  FaUsers 
+} from "react-icons/fa";
 import "./general.css";
 
 export default function GeneralPage() {
@@ -14,50 +20,47 @@ export default function GeneralPage() {
   const cards = [
     {
       title: "Année universitaire",
-      icon: "/icon/calendrier.png",
+      icon: FaCalendarAlt,
       route: "/resonsable/plus/gestion_general/annee-universitaire",
     },
     {
       title: "Semestres",
-      icon: "/icon/examen.png",
+      icon: FaBook,
       route: "/resonsable/plus/gestion_general/semestres",
     },
     {
       title: "Niveaux / parcours",
-      icon: "/icon/modules.png",
+      icon: FaLayerGroup,
       route: "/resonsable/plus/gestion_general/niveaux",
     },
     {
       title: "Groupes étudiants",
-      icon: "/icon/gens.png",
+      icon: FaUsers,
       route: "/resonsable/plus/gestion_general/etudiants",
     },
   ];
 
   return (
-    <div className="page">
-      <TopBar />
-
-      <div className="layout">
-        <Sidebar open={open} toggleOpen={toggleOpen} />
-
-        <main className={`content ${open ? "content-open" : ""}`}>
-          <div className="general-wrapper">
-            <div className="general-inner">
-              {cards.map((c) => (
-                <button
-                  key={c.title}
-                  className="general-card"
-                  onClick={() => router.push(c.route)}
-                >
-                  <img src={c.icon} className="general-icon" />
-                  <span className="general-title">{c.title}</span>
-                </button>
-              ))}
-            </div>
+    <div className="layout">
+      <Sidebar open={open} toggleOpen={toggleOpen} />
+      <div className="main">
+        <TopBar />
+        <div className="page-content">
+          <div className="general-grid">
+            {cards.map((c) => (
+              <button
+                key={c.title}
+                className="general-card"
+                onClick={() => router.push(c.route)}
+              >
+                <c.icon className="general-icon" />
+                <span className="general-title">{c.title}</span>
+              </button>
+            ))}
           </div>
-        </main>
+        </div>
       </div>
     </div>
   );
 }
+

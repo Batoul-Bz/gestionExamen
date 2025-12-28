@@ -66,7 +66,7 @@ export default function ProfilePage() {
                 <div className="field-row">
                   <div className="field">
                     <label>Nom :</label>
-                    <input type="text" defaultValue="MAatalla" />
+                    <input type="text" defaultValue="Merzoug" />
                   </div>
                   <div className="field">
                     <label>Date de naissance</label>
@@ -95,7 +95,7 @@ export default function ProfilePage() {
             </div>
           </section>
 
-          {/* ======= CARD 2 ======= */}
+         
           <section className="profile-card">
             <h2 className="card-title">Informations sur l’emploi :</h2>
 
@@ -147,3 +147,4 @@ export default function ProfilePage() {
     </div>
   );
 }
+

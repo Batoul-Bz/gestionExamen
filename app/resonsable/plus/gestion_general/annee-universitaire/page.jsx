@@ -1,4 +1,4 @@
-// AnneeUniversitairePage.jsx
+
 "use client";
 import { useState } from "react";
 import TopBar from "../../../TopBar";
@@ -98,3 +98,4 @@ export default function AnneeUniversitairePage() {
     </div>
   );
 }
+

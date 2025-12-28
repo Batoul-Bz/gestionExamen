@@ -10,7 +10,7 @@ export default function TopBar() {
   const [showNotif, setShowNotif] = useState(false);
 
   const goToProfile = () => {
-    router.push("/resonsable/profile");
+    router.push("/chef_departement/profile");
   };
 
   const toggleNotif = () => {
@@ -60,3 +60,4 @@ export default function TopBar() {
     </header>
   );
 }
+

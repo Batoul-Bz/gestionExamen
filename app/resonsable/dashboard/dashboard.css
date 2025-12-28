@@ -34,9 +34,7 @@ body {
   margin-left: -200px;
 }
 
-/* ========================
-   DASHBOARD MAIN CONTAINER
-========================= */
+
 .dash-main {
   display: flex;
   flex-direction: column;
@@ -304,3 +302,4 @@ body {
   animation: barRise 0.8s ease forwards;
   transform-origin: bottom;
 }
+

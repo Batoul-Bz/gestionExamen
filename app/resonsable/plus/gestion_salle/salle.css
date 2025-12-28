@@ -1,138 +1,175 @@
- .page {
+.layout {
+  display: flex;
   min-height: 100vh;
-  background: #f3f5ff;
+  background: #e3ebff; 
+}
+
+.main {
+  flex: 1;
+  margin-left: 60px;
   display: flex;
   flex-direction: column;
 }
 
-
-.layout {
-  display: flex;
-  margin-top: 70px; 
-}
-
-.content {
+.page-content {
+  padding: 24px;
+  margin-top: 70px;
   flex: 1;
-  padding: 20px 30px;
 }
 
-
-.mod-wrapper {
-  width: 100%;
-  background: #fdf7f4;
-  border-radius: 18px 18px 0 0;
-  padding: 16px 18px 24px;
+.salle-wrapper {
+  padding: 24px;
+  margin-top: 70px;
+  flex: 1;
 }
 
+.salle-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
 
-.mod-header-bar {
+.salle-title {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin-bottom: 16px;
-}
-
-.btn-retourne {
-  background: #243a7a;
-  color: #fff;
-  border: none;
-  border-radius: 8px;
-  padding: 8px 18px;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-.mod-title {
-  font-size: 24px;
-  color: #1d2752;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.mod-title-icon {
-  width: 28px;
-  height: 28px;
-}
-
-.mod-actions-right {
-  display: flex;
-  gap: 10px;
-}
-
-.mod-btn {
-  border: none;
-  border-radius: 18px;
-  padding: 8px 18px;
-  font-size: 15px;
-  cursor: pointer;
-  color: #fff;
-}
-
-.btn-importer {
-  background: #38a7ff;
-}
-
-.btn-ajouter {
-  background: #2bb36b;
-}
-
-
-.mod-table {
-  margin-top: 12px;
-  border-radius: 10px;
-  overflow: hidden;
-  border: 2px solid #d0d8ff;
-}
-
-.mod-row {
-  display: grid;
-  grid-template-columns: 2.2fr 1.2fr 1.2fr 1.6fr 0.8fr;
-  align-items: center;
-  padding: 10px 14px;
-  background: #ffffff;
-}
-
-.mod-row-alt {
-  background: #e5ecff; 
-}
-
-.mod-header {
-  background: #f3f4ff;
+  justify-content: center;
+  gap: 8px; 
+  font-size: 26px;
   font-weight: 600;
-  color: #1d2752;
+  margin-bottom: 20px;
+  color: #10245f;
 }
 
-.mod-cell {
-  padding: 0 6px;
+.salle-title svg {
+  margin-right: 6px;
+  color: #10245f;
+  font-size: 70px;
 }
 
-.mod-cell input {
-  width: 100%;
-  border: none;
-  background: transparent;
-  font-size: 14px;
-  padding: 4px 0;
-}
-
-.mod-cell input:disabled {
-  color: #1d2752;
-}
-
-
-.actions-cell {
+.salle-actions {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 30px;
+}
+
+.salle-btn {
+  display: flex;
+  align-items: center;
+  background: #6fb1f3;
+  border: none;
+  padding: 12px 26px;
+  border-radius: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  color: white;
+  gap: 6px;
+}
+
+.salle-btn:hover {
+  background: #5790d3;
+  transform: translateY(-2px);
+}
+
+.salle-btn svg {
+  font-size: 14px;
+}
+
+.salle-btn-delete {
+  background: #ef4444;
+}
+
+.salle-btn-delete:hover {
+  background: #dc2626;
+}
+
+
+.salle-table {
+  display: flex;
+  flex-direction: column;
   gap: 8px;
 }
 
-.row-icon-btn {
-  border: none;
-  background: transparent;
-  cursor: pointer;
+.salle-row, .salle-row-head {
+  display: grid;
+  grid-template-columns: 1fr 1.8fr 1fr 1.5fr;
+  gap: 8px;
 }
 
-.row-icon-btn img {
-  width: 20px;
-  height: 20px;
+.cell {
+  background: #ffffff;
+  padding: 16px 12px;
+  border-radius: 14px;
+  text-align: center;
+  font-weight: 600;
+  border: 1px solid #e0e7ff;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+.salle-row-head .cell {
+  background: #dfe6f5;
+  font-size: 15px;
+}
+
+.salle-row {
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.salle-row:hover .cell {
+  background: #e6f0ff;
+  transform: translateY(-1px);
+}
+
+.salle-row.selected .cell {
+  background: #6fb1f3;
+  color: white;
+  border-color: #6fb1f3;
+}
+
+.salle-row-alt .cell {
+  background: #f0f7ff;
+}
+
+.salle-row-alt:hover .cell {
+  background: #e6f0ff;
+}
+
+.value-cell input, .value-cell select {
+  width: 100%;
+  border: none;
+  background: transparent;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  outline: none;
+}
+
+.value-cell input:disabled, .value-cell select:disabled {
+  cursor: default;
+  color: inherit;
+}
+
+.value-cell input:focus, .value-cell select:focus {
+  background: rgba(111, 177, 243, 0.1);
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .main {
+    margin-left: 0;
+  }
+  
+  .salle-row, .salle-row-head {
+    grid-template-columns: 1fr 1.5fr 1fr 1.2fr;
+  }
+  
+  .salle-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+

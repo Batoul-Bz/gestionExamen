@@ -2,26 +2,27 @@
 import React from "react";
 import { useRouter } from "next/navigation";
 import "./about.css";
+import { FaPhone, FaEnvelope } from "react-icons/fa";
 
 export default function AboutPage() {
   const router = useRouter();
 
   return (
-    <div className="about-bg">
-      {/* HEADER */}
+    <div className="page">
       <header className="header">
-        <img className="logo" src="/icon/logo.png" alt="Logo" />
+        <div className="logo-text">ExOrderIt</div>
         <div className="header_links">
           <button onClick={() => router.push("/")}>Home</button>
-          <button style={{ color: "#B1C9FE" }} onClick={() => router.push("/about")}>
+          <button 
+            style={{ color: "#B1C9FE", fontWeight: 600 }} 
+            onClick={() => router.push("/about")}
+          >
             About
           </button>
           <button onClick={() => router.push("/Login")}>Login</button>
-
         </div>
       </header>
 
-      {/* ABOUT SECTION */}
       <section className="about">
         <div className="about-container">
           <div className="card">
@@ -68,7 +69,7 @@ export default function AboutPage() {
               <strong>Attendance:</strong> Track student attendance and exam supervision.
             </p>
             <p>
-              <img src="/icon/results.png" className="icon" alt="Exam Scheduling" />{" "}
+              <img src="/icon/schedule.png" className="icon" alt="Exam Scheduling" />{" "}
               <strong>Exam Scheduling:</strong> Set dates, times, and duration for each
               exam easily.
             </p>
@@ -79,40 +80,36 @@ export default function AboutPage() {
           </div>
 
           <div className="about-image">
-            <img src="/icon/about.png" alt="About Image" />
+            <img src="/icon/about.png" alt="About ExOrderIt Platform" />
           </div>
         </div>
       </section>
 
-      {/* FOOTER */}
-      <footer>
-        <p className="footer-title">We are committed to providing assistance</p>
-        <div className="footer-contact">
-          <span>
-            <img
-              src="/icon/phone.png"
-              alt="Phone"
-              style={{ width: 20, height: 20, marginRight: 8 }}
-            />
-            043 xx xx xx
-          </span>
-          <span>
-            <img
-              src="/icon/mail.png"
-              alt="Email"
-              style={{ width: 20, height: 20, marginRight: 8 }}
-            />
-            aboubaker-belkaid@univ.tlemcen.dz
-          </span>
-        </div>
+<footer className="footer">
+  <div className="footer-content">
+    <h3 className="footer-title">We are committed to providing assistance</h3>
 
-        <div className="footer-logos">
-          <img src="/icon/logo.png" alt="Logo" />
-          <img src="/icon/copy.png" alt="Copyright" />
-        </div>
+    <div className="footer-contact">
+      <div className="contact-item">
+        <FaPhone />
+        <span>043 xx xx xx</span>
+      </div>
 
-        <p className="copy">ExOrderIt © 2025</p>
-      </footer>
+      <div className="contact-item">
+        <FaEnvelope />
+        <a href="mailto:aboubaker-belkaid@univ.tlemcen.dz">
+          aboubaker-belkaid@univ.tlemcen.dz
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div className="footer-bottom">
+    ExOrderIt © 2025
+  </div>
+</footer>
+
+
     </div>
   );
 }

@@ -5,19 +5,19 @@
 
 .content {
   flex: 1;
-  margin-left: 220px; /* Sidebar */
-  margin-top: 70px;   /* TopBar */
+  margin-left: 220px; 
+  margin-top: 70px;   
   padding: 20px;
 }
 
-/* Wrapper */
+
 .profile-wrapper {
   padding: 32px;
   background: #e0e9fb;
   min-height: 100vh;
 }
 
-/* Card */
+
 .profile-card {
   background: #f5f8ff;
   border-radius: 24px;
@@ -33,14 +33,14 @@
   margin-bottom: 18px;
 }
 
-/* Grid */
+
 .personal-grid {
   display: grid;
   grid-template-columns: 220px 1fr;
   gap: 24px;
 }
 
-/* Photo */
+
 .photo-col {
   display: flex;
   flex-direction: column;
@@ -66,7 +66,7 @@
   cursor: pointer;
 }
 
-/* Fields */
+
 .personal-fields,
 .job-grid {
   display: flex;
@@ -104,7 +104,7 @@
   box-shadow: inset 0 0 0 1px #d4dff7;
 }
 
-/* Footer */
+
 .profile-footer {
   display: flex;
   justify-content: center;
@@ -126,3 +126,4 @@
 .footer-btn.main {
   background: #0e3f8f;
 }
+

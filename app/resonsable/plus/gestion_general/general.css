@@ -1,83 +1,97 @@
-.page {
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-  background: #e3ebff;
-}
-
 .layout {
   display: flex;
+  min-height: 100vh;
+  background: #e3ebff; 
 }
 
-.content {
+.main {
+  flex: 1;
+  margin-left: 60px;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-content {
+  padding: 24px;
   margin-top: 70px;
-  margin-left: 0;
-  width: 100%;
-  padding: 0;
-  transition: margin-left 0.3s ease;
-}
-
-.content-open {
-  margin-left: 220px;
-}
-
-
-.general-wrapper {
-  width: 100%;
-  min-height: calc(100vh - 70px);
+  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 30px 0;
 }
 
-.general-inner {
-  background: #ffffff;
-  border-radius: 32px;
-  padding: 40px 80px;
+.general-grid {
   display: grid;
   grid-template-columns: repeat(2, 320px);
-  grid-auto-rows: 200px;
-  grid-row-gap: 40px;
-  grid-column-gap: 80px;
-  align-items: center;
-  justify-content: center;
+  grid-gap: 40px 80px;
+  max-width: 900px;
+  margin: 0 auto;
+  gap: 40px;
 }
-
 
 .general-card {
   border: none;
-  background: #ffffff;
+  background: white;
   border-radius: 24px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.16);
-  padding: 26px 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+  padding: 40px 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 18px;
+  gap: 20px;
   cursor: pointer;
-  transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+  transition: all 0.3s ease;
+  font-family: inherit;
 }
 
 .general-icon {
-  width: 90px;
-  height: 90px;
-  object-fit: contain;
-  filter: brightness(0) saturate(100%) invert(9%) sepia(52%) saturate(1640%)
-    hue-rotate(215deg) brightness(96%) contrast(91%);
+  width: 80px;
+  height: 80px;
+  color: #0b1a57;
+  transition: all 0.3s ease;
 }
 
 .general-title {
-  font-size: 19px;
-  font-weight: 700;
+  font-size: 20px;
+  font-weight: 600;
   color: #10245f;
   text-align: center;
+  line-height: 1.4;
 }
 
-/* hover */
+
 .general-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 14px 26px rgba(0, 0, 0, 0.22);
-  background: #f7f9ff;
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.18);
+  background: #f8fbff;
 }
+
+.general-card:hover .general-icon {
+  color: #5790d3;
+  transform: scale(1.1);
+}
+
+
+@media (max-width: 768px) {
+  .main {
+    margin-left: 0;
+  }
+  
+  .general-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 0 20px;
+  }
+  
+  .general-card {
+    padding: 30px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-content {
+    padding: 16px;
+  }
+}
+

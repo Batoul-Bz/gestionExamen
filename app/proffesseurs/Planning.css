@@ -1,4 +1,4 @@
-/* ===== Layout ===== */
+
 .layout {
   display: flex;
 }
@@ -30,13 +30,13 @@
   transition: all 0.3s ease;
 }
 
-/* لما sidebar تتفتح */
+
 .sidebar:hover ~ .main {
   margin-left: 220px;
   width: calc(100% - 220px);
 }
 
-/* ===== Page ===== */
+
 .teacher-planning-page {
   padding: 25px;
   font-family: "Poppins", sans-serif;
@@ -50,7 +50,7 @@
   color: #0b2c73;
 }
 
-/* ===== Buttons ===== */
+
 .buttons-row {
   margin-bottom: 20px;
 }
@@ -73,7 +73,7 @@
   transform: translateY(-2px);
 }
 
-/* ===== Table ===== */
+
 .table-container {
   overflow-x: auto;
 }
@@ -109,3 +109,4 @@
   font-style: italic;
   color: #555;
 }
+

@@ -1,6 +1,6 @@
 "use client";
-
 import React, { useState } from "react";
+import { FaPlus, FaEdit, FaTrash, FaCalendarAlt } from "react-icons/fa";
 import "./Session.css";
 
 export default function SessionTable() {
@@ -34,33 +34,33 @@ export default function SessionTable() {
   };
 
   return (
-    <div className="exam-wrapper">
-      <div className="exam-card">
-        <div className="exam-header">
-          <h2>Définition sessions d’examens</h2>
-        </div>
+    <div className="session-wrapper">
+      <div className="session-inner">
+        <h2 className="session-title">
+          <FaCalendarAlt /> Définition sessions d examens
+        </h2>
 
-        <div className="exam-actions">
-          <button className="exam-btn btn-add" onClick={addRow}>
-            Ajouter +
+        <div className="session-actions">
+          <button className="session-btn" onClick={addRow}>
+            <FaPlus /> Ajouter
           </button>
-          
         </div>
 
-        <div className="exam-table">
-          <div className="exam-row exam-header-row">
-            <div className="cell">Périod</div>
+        <div className="session-table">
+          <div className="session-row session-row-head">
+            <div className="cell cell-num">N°</div>
+            <div className="cell">Période</div>
             <div className="cell">Année universitaire</div>
-            <div className="cell">Sessions</div>
+            <div className="cell">Session</div>
             <div className="cell">Niveau</div>
-            <div className="cell cell-actions">Action</div>
           </div>
 
-          {rows.map((r) => {
+          {rows.map((r, index) => {
             const isEditing = editingId === r.id;
             return (
-              <div key={r.id} className="exam-row">
-                <div className="cell">
+              <div key={r.id} className={`session-row ${index % 2 === 1 ? "session-row-alt" : ""}`}>
+                <div className="cell cell-num value-cell">{index + 1}</div>
+                <div className="cell value-cell">
                   <input
                     type="text"
                     value={r.period}
@@ -68,7 +68,7 @@ export default function SessionTable() {
                     onChange={(e) => updateField(r.id, "period", e.target.value)}
                   />
                 </div>
-                <div className="cell">
+                <div className="cell value-cell">
                   <input
                     type="text"
                     value={r.year}
@@ -76,7 +76,7 @@ export default function SessionTable() {
                     onChange={(e) => updateField(r.id, "year", e.target.value)}
                   />
                 </div>
-                <div className="cell">
+                <div className="cell value-cell">
                   <input
                     type="text"
                     value={r.session}
@@ -84,7 +84,7 @@ export default function SessionTable() {
                     onChange={(e) => updateField(r.id, "session", e.target.value)}
                   />
                 </div>
-                <div className="cell">
+                <div className="cell value-cell">
                   <input
                     type="text"
                     value={r.level}
@@ -92,18 +92,24 @@ export default function SessionTable() {
                     onChange={(e) => updateField(r.id, "level", e.target.value)}
                   />
                 </div>
-                <div className="cell cell-actions">
+                <div className="cell value-cell">
                   <button
-                    className="row-btn row-edit"
-                    onClick={() => toggleEdit(r.id)}
+                    className="session-row-btn session-row-edit"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      toggleEdit(r.id);
+                    }}
                   >
-                    {isEditing ? "Valider" : "Modifier"}
+                    <FaEdit /> {isEditing ? "Valider" : "Modifier"}
                   </button>
                   <button
-                    className="row-btn row-delete"
-                    onClick={() => deleteRow(r.id)}
+                    className="session-row-btn session-row-delete"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      deleteRow(r.id);
+                    }}
                   >
-                    X
+                    <FaTrash />
                   </button>
                 </div>
               </div>
@@ -114,3 +120,4 @@ export default function SessionTable() {
     </div>
   );
 }
+

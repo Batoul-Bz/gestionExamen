@@ -98,7 +98,7 @@ export default function DashboardPage() {
               </div>
             </section>
 
-            {/* HISTORIQUE */}
+            {}
             <section className="dash-section">
               <div className="section-title">Historique</div>
 
@@ -121,3 +121,4 @@ export default function DashboardPage() {
     </div>
   );
 }
+

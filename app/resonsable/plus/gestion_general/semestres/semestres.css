@@ -1,137 +1,135 @@
-.page {
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-  background: #e3ebff;
-}
-
 .layout {
   display: flex;
-  width: 100%;
-  height: calc(100vh - 70px);
+  min-height: 100vh;
+  background: #e3ebff; 
 }
 
-.content {
+.sidebar {
+  flex-shrink: 0;
+}
+
+.main, .content {
   flex: 1;
-  margin-top: 70px;
-  padding: 20px;
-  transition: all 0.3s ease;
-}
-
-.content-open {
-  margin-left: 220px;
-}
-
-.sem-wrapper {
-  width: 100%;
-  min-height: calc(100% - 70px);
+  margin-left: 60px;
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 28px 0 40px;
-  background: #fbeff5;
+  flex-direction: column;
+}
+
+.page-content, .sem-wrapper {
+  padding: 24px;
+  margin-top: 70px;
+  flex: 1;
 }
 
 .sem-inner {
-  width: 80%;
   max-width: 900px;
-  border-radius: 30px;
+  margin: 0 auto;
 }
 
-.sem-header {
+.page-title, .sem-title {
   display: flex;
+  align-items: center;
   justify-content: center;
-  margin-bottom: 18px;
-}
-
-.sem-title {
+  gap: 8px; 
   font-size: 26px;
-  font-weight: 700;
-  color: #10245f;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.sem-icon-img {
-  width: 20px;
-  height: 20px;
-  color: #10245f;
-}
-
-.sem-actions {
-  display: flex;
-  gap: 12px;
-  margin-bottom: 26px;
-}
-
-.sem-btn {
-  background: #36a9ff;
-  color: #fff;
-  border: none;
-  border-radius: 18px;
-  padding: 6px 20px;
-  font-size: 14px;
   font-weight: 600;
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  cursor: pointer;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.12);
+  margin-bottom: 20px;
+  color: #10245f;
 }
 
-.circle {
-  display: inline-flex;
-  align-items: center;
+.sem-title svg, .sem-icon-img {
+  margin-right: 6px;
+  color: #10245f;
+}
+
+.actions, .sem-actions {
+  display: flex;
   justify-content: center;
-  width: 20px;
-  height: 20px;
-  border-radius: 999px;
-  background: #fff;
-  color: #36a9ff;
+  gap: 16px;
+  margin-bottom: 30px;
+}
+
+.btn, .sem-btn {
+  display: flex;
+  align-items: center;
+  background: #6fb1f3;
+  border: none;
+  padding: 12px 26px;
+  border-radius: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  color: white;
+  gap: 6px;
+}
+
+.btn:hover, .sem-btn:hover {
+  background: #5790d3;
+  transform: translateY(-2px);
+}
+
+.btn svg, .sem-btn svg, .circle {
   font-size: 14px;
 }
 
-.btn-delete {
-  background: red;
+.btn-delete, .sem-btn.btn-delete {
+  background: #ef4444;
 }
-.btn-delete .circle {
-  color: red;
+
+.btn-delete:hover, .sem-btn.btn-delete:hover {
+  background: #dc2626;
 }
+
 
 .sem-table {
-  margin-top: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
-.sem-row {
+.sem-row, .sem-row-head {
   display: grid;
-  grid-template-columns: 1fr 2.2fr 2.2fr;
-  column-gap: 4px;
-  margin-bottom: 10px;
-}
-
-.sem-row-head .cell {
-  background: #dbe4ff;
-  font-weight: 700;
-  font-size: 17px;
+  grid-template-columns: 1fr 2fr 2fr; 
+  gap: 8px;
 }
 
 .cell {
-  padding: 12px 18px;
-  border-radius: 18px;
-  background: #fff;
+  background: #ffffff;
+  padding: 16px 12px;
+  border-radius: 14px;
   text-align: center;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+  font-weight: 600;
+  border: 1px solid #e0e7ff;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.sem-row-alt .value-cell {
-  background: #dde9ff;
+.sem-row-head .cell {
+  background: #dfe6f5;
+  font-size: 15px;
 }
 
-.value-cell {
-  font-size: 16px;
-  font-weight: 700;
+.sem-row {
+  cursor: pointer;
+  transition: all 0.2s;
 }
+
+.sem-row:hover .cell {
+  background: #e6f0ff;
+  transform: translateY(-1px);
+}
+
+
+.sem-row-alt .cell {
+  background: #f0f7ff;
+}
+
+.sem-row-alt:hover .cell {
+  background: #e6f0ff;
+}
+
 
 .value-cell input {
   width: 100%;
@@ -139,9 +137,33 @@
   background: transparent;
   text-align: center;
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 600;
+  outline: none;
 }
 
 .value-cell input:disabled {
   cursor: default;
+  color: inherit;
 }
+
+.value-cell input:focus {
+  background: rgba(111, 177, 243, 0.1);
+  border-radius: 8px;
+}
+
+
+@media (max-width: 768px) {
+  .main, .content {
+    margin-left: 0;
+  }
+  
+  .sem-row, .sem-row-head {
+    grid-template-columns: 1fr 1.5fr 1.5fr;
+  }
+  
+  .actions, .sem-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+

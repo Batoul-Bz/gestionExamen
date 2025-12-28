@@ -1,4 +1,4 @@
-// SemestresPage.jsx
+
 "use client";
 
 import { useState } from "react";
@@ -55,25 +55,18 @@ export default function SemestresPage() {
                 </h2>
               </div>
 
-              <div className="sem-actions">
-                <button className="sem-btn btn-add" onClick={addRow}>
-                  Ajouter <FaPlus className="circle" />
-                </button>
-                <button
-                  className="sem-btn btn-edit"
-                  onClick={() => rows[0] && toggleEdit(rows[0].id)}
-                >
-                  Modifier <FaEdit className="circle" />
-                </button>
-                <button
-                  className="sem-btn btn-delete"
-                  onClick={() =>
-                    rows.length && deleteRow(rows[rows.length - 1].id)
-                  }
-                >
-                  Supprimer <FaTrash className="circle" />
-                </button>
-              </div>
+<div className="sem-actions">
+  <button className="sem-btn btn-add" onClick={addRow}>
+    Ajouter <FaPlus />
+  </button>
+  <button className="sem-btn btn-edit" onClick={() => rows[0] && toggleEdit(rows[0].id)}>
+    Modifier <FaEdit />
+  </button>
+  <button className="sem-btn btn-delete" onClick={() => rows.length && deleteRow(rows[rows.length - 1].id)}>
+    Supprimer <FaTrash />
+  </button>
+</div>
+
 
               <div className="sem-table">
                 <div className="sem-row sem-row-head">
@@ -118,3 +111,4 @@ export default function SemestresPage() {
     </div>
   );
 }
+

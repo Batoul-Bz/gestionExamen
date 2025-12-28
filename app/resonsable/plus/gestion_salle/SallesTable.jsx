@@ -8,27 +8,24 @@ export default function SallesTable() {
       id: 1,
       numero: 1,
       nom: "Salle N101",
-      disponibilite: "Disponible",
-      date: "2025-06-01",
-      heure: "08:30",
+      capacite: "50",
+      localisation: "North - Étage 1",
       editing: false,
     },
     {
       id: 2,
       numero: 2,
       nom: "Salle S001",
-      disponibilite: "Occupée",
-      date: "2025-06-02",
-      heure: "10:00",
+      capacite: "30",
+      localisation: "Sude - RDC",
       editing: false,
     },
     {
       id: 3,
       numero: 3,
-      nom: "Salle A202",
-      disponibilite: "Disponible",
-      date: "2025-06-03",
-      heure: "14:00",
+      nom: "Salle N202",
+      capacite: "40",
+      localisation: "North - Étage 2",
       editing: false,
     },
   ]);
@@ -42,9 +39,8 @@ export default function SallesTable() {
       id: newId,
       numero: newId,
       nom: "",
-      disponibilite: "",
-      date: "",
-      heure: "",
+      capacite: "",
+      localisation: "",
       editing: true,
     };
 
@@ -80,10 +76,11 @@ export default function SallesTable() {
       alert("Veuillez sélectionner une ligne à supprimer.");
       return;
     }
+
     if (!confirm("Supprimer cette salle ?")) return;
 
     setSalles((prevSalles) =>
-      prevSalles.filter((_, i) => i !== selectedIndex)
+      prevSalles.filter((_, index) => index !== selectedIndex)
     );
     setSelectedIndex(null);
   };
@@ -114,9 +111,8 @@ export default function SallesTable() {
           <div className="salle-row salle-row-head">
             <div className="cell cell-num">N°</div>
             <div className="cell">Nom</div>
-            <div className="cell">Disponibilité</div>
-            <div className="cell">Date</div>
-            <div className="cell">Heure</div>
+            <div className="cell">Capacité</div>
+            <div className="cell">Localisation</div>
           </div>
 
           {salles.map((salle, index) => (
@@ -143,41 +139,28 @@ export default function SallesTable() {
               </div>
 
               <div className="cell value-cell">
-                <select
-                  value={salle.disponibilite}
-                  disabled={!salle.editing}
-                  onChange={(e) =>
-                    updateField(
-                      salle.id,
-                      "disponibilite",
-                      e.target.value
-                    )
-                  }
-                >
-                  <option value="">Choisir</option>
-                  <option value="Disponible">Disponible</option>
-                  <option value="Occupée">Occupée</option>
-                </select>
-              </div>
-
-              <div className="cell value-cell">
                 <input
-                  type="date"
-                  value={salle.date}
+                  type="number"
+                  value={salle.capacite}
                   disabled={!salle.editing}
                   onChange={(e) =>
-                    updateField(salle.id, "date", e.target.value)
+                    updateField(salle.id, "capacite", e.target.value)
                   }
                 />
               </div>
 
               <div className="cell value-cell">
                 <input
-                  type="time"
-                  value={salle.heure}
+                  type="text"
+                  placeholder="Bloc / Étage / Zone"
+                  value={salle.localisation}
                   disabled={!salle.editing}
                   onChange={(e) =>
-                    updateField(salle.id, "heure", e.target.value)
+                    updateField(
+                      salle.id,
+                      "localisation",
+                      e.target.value
+                    )
                   }
                 />
               </div>
