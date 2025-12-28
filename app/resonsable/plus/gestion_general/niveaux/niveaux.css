@@ -1,0 +1,129 @@
+.layout {
+  display: flex;
+  min-height: 100vh;
+  background: #f9f9f9; 
+}
+
+.main {
+  flex: 1;
+  margin-left: 60px;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-content {
+  padding: 24px;
+  margin-top: 70px;
+}
+
+.page-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px; 
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+
+.page-title svg {
+  vertical-align: middle;
+  margin-right: 6px;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  background: #6fb1f3;
+  border: none;
+  padding: 12px 26px;
+  border-radius: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #5790d3;
+}
+
+.btn svg {
+  margin-right: 6px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.card {
+  background: white;
+  padding: 14px;
+  border-radius: 14px;
+  text-align: center;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.card.header {
+  background: #e0e0e0; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card.header svg {
+  margin-right: 6px;
+}
+
+.card.selected {
+  background: #6fb1f3;
+  color: white;
+}
+
+.parcours-column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.parcours-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #e6f0ff;
+  padding: 10px 14px;
+  border-radius: 12px;
+  font-weight: 500;
+  transition: background 0.2s, transform 0.2s;
+  cursor: pointer;
+}
+
+.parcours-item:hover {
+  background: #cce0ff;
+  transform: translateY(-2px);
+}
+
+.parcours-icon {
+  color: #4a90e2;
+  font-size: 16px;
+}

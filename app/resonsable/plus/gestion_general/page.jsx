@@ -25,7 +25,7 @@ export default function GeneralPage() {
     {
       title: "Niveaux / parcours",
       icon: "/icon/modules.png",
-      route: "/resonsable/gestion_general/niveaux",
+      route: "/resonsable/plus/gestion_general/niveaux",
     },
     {
       title: "Groupes étudiants",
