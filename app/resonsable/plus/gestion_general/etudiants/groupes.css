@@ -26,7 +26,6 @@
   margin-bottom: 20px;
 }
 
-
 .page-title svg {
   vertical-align: middle;
   margin-right: 6px;
@@ -59,71 +58,47 @@
   margin-right: 6px;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
+/* جدول الـ Groupes */
+.table-container {
   max-width: 900px;
   margin: auto;
-}
-
-.column {
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 8px;
 }
 
-.card {
-  background: white;
-  padding: 14px;
+.header-row, .data-row {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 8px;
+}
+
+.cell {
+  background: #ffffff;
+  padding: 16px 12px;
   border-radius: 14px;
   text-align: center;
   font-weight: 600;
+  border: 1px solid #e0e7ff;
+}
+
+.cell.header {
+  background: #dfe6f5;
+  font-size: 15px;
+}
+
+.data-row {
   cursor: pointer;
-  transition: background 0.2s;
+  transition: all 0.2s;
 }
 
-.card.header {
-  background: #e0e0e0; 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.data-row:hover .cell {
+  background: #e6f0ff;
+  transform: translateY(-1px);
 }
 
-.card.header svg {
-  margin-right: 6px;
-}
-
-.card.selected {
+.data-row.selected .cell {
   background: #6fb1f3;
   color: white;
-}
-
-.parcours-column {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin-top: 10px;
-}
-
-.parcours-item {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  background: #e6f0ff;
-  padding: 10px 14px;
-  border-radius: 12px;
-  font-weight: 500;
-  transition: background 0.2s, transform 0.2s;
-  cursor: pointer;
-}
-
-.parcours-item:hover {
-  background: #cce0ff;
-  transform: translateY(-2px);
-}
-
-.parcours-icon {
-  color: #4a90e2;
-  font-size: 16px;
+  border-color: #6fb1f3;
 }

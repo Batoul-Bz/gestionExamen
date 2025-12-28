@@ -30,7 +30,7 @@ export default function GeneralPage() {
     {
       title: "Groupes étudiants",
       icon: "/icon/gens.png",
-      route: "/resonsable/gestion_general/etudiants",
+      route: "/resonsable/plus/gestion_general/etudiants",
     },
   ];
 
