@@ -1,0 +1,17 @@
+
+.charts-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 30px;
+  width: 100%;
+}
+
+.charts-container > div {
+  flex: 1; /* كل عنصر يأخذ مساحة متساوية */
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  height: 350px; /* ✅ اجعلها أكبر */
+}

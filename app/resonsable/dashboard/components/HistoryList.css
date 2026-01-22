@@ -1,0 +1,70 @@
+
+.dash-section {
+  background: #fff;
+  padding: 25px;
+  border-radius: 18px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  margin-top: 30px;
+}
+
+.section-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #111827;
+}
+
+.history-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.history-row {
+  background: #f9fafb; /* خلفية فاتحة */
+  padding: 18px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.2s;
+}
+
+.history-row:hover {
+  background: #f3f4f6; /* عند التمرير */
+}
+
+.history-main {
+  display: flex;
+  flex-direction: column;
+}
+
+.history-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.history-desc {
+  font-size: 14px;
+  color: #6b7280;
+  margin-top: 5px;
+}
+
+.history-btn {
+  background: #e5e7eb; /* لون فاتح */
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  color: #6b7280;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.history-btn:hover {
+  background: #d1d5db;
+}

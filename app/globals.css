@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@import "./resonsable/dashboard/Dashboard.css";
+@import "./resonsable/dashboard/components/StatsCards.css";
+@import "./resonsable/dashboard/components/HistoryList.css";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* خصائص الـ Sidebar */
+.sidebar {
+  width: 250px; /* عرض ثابت للـ Sidebar */
+  background-color: #2a2a2a; /* لون الخلفية للـ Sidebar */
+  color: #fff;
+  position: fixed;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  padding: 20px;
+}
+
+/* خصائص المحتوى */
+.main-content {
+  margin-left: 250px; /* إضافة المسافة المناسبة للمحتوى بجانب الـ Sidebar */
+  padding: 20px;
+  background-color: #f4f4f4; /* لون الخلفية للمحتوى */
+  min-height: 100vh;
+}

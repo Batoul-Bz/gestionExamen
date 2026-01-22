@@ -1,0 +1,223 @@
+/* periods.css */
+.periods-wrapper {
+  flex: 1;
+  padding: 32px 32px 40px;
+  background-color: #fbeff5;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+
+.periods-card {
+  width: 100%;
+  max-width: 780px;
+  background: #ffffff;
+  border-radius: 32px;
+  padding: 28px 30px 34px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+}
+
+
+
+.periods-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: #082b73;
+  margin-bottom: 24px;
+}
+
+.periods-header h2 {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+
+.periods-header-icon {
+  font-size: 26px;
+}
+
+
+
+.periods-actions {
+  display: flex;
+  gap: 18px;
+  justify-content: center;
+  margin-bottom: 26px;
+}
+
+.periods-btn {
+  min-width: 170px;
+  padding: 10px 26px;
+  border-radius: 18px;
+  border: none;
+  background: #35a8ff;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.18);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.periods-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 9px 18px rgba(0, 0, 0, 0.22);
+}
+
+.btn-add {
+  background: #35a8ff;
+}
+
+.btn-edit {
+  background: green;
+}
+
+.btn-delete {
+  background: red;
+}
+
+.plus-circle {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+
+
+
+.periods-table {
+  margin-top: 8px;
+ 
+  overflow: hidden;
+}
+
+.periods-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.cell {
+  padding: 14px 26px;
+  background: #ffffff;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.periods-row-header .cell {
+  background: #dfe9ff;
+  color: #082b73;
+  font-size: 17px;
+}
+
+/*dertha bch nlewen whda bwhdz*/
+
+.periods-row:nth-child(2) .cell,
+.periods-row:nth-child(4) .cell,
+.periods-row:nth-child(6) .cell {
+  background: #ffffff;
+}
+
+.periods-row:nth-child(3) .cell,
+.periods-row:nth-child(5) .cell {
+  background: #e5ecff;
+}
+
+
+
+.periods-row:last-child .cell:first-child {
+  border-bottom-left-radius: 22px;
+}
+
+.periods-row:last-child .cell:last-child {
+  border-bottom-right-radius: 22px;
+}
+
+
+
+@media (max-width: 768px) {
+  .periods-card {
+    padding: 20px 16px 26px;
+    border-radius: 24px;
+  }
+
+  .periods-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .periods-btn {
+    width: 100%;
+  }
+  .periods-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 120px 80px; /* Début | Fin | Action | Sélection */
+  align-items: center;
+  gap: 10px;
+}
+
+}
+.page {
+  min-height: 100vh;
+  background: #f4f6fa;
+  display: flex;
+}
+
+
+.top-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+  background-color: #0d2b60;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 25px;
+  z-index: 100;
+}
+
+
+.side-bar {
+  position: fixed;
+  top: 70px; 
+  left: 0;
+  width: 80px;
+  height: calc(100vh - 70px);
+  background: #0d2b60;
+  padding: 20px 10px;
+  border-radius: 0 15px 15px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: 0.3s ease;
+  z-index: 50;
+}
+
+.side-bar.open {
+  width: 220px;
+}
+
+
+.content {
+  margin-left: 80px; 
+  padding: 100px 40px 40px 40px; 
+  width: 100%;
+  transition: margin-left 0.3s ease;
+}
+
+.content.sidebar-open {
+  margin-left: 220px; 
+}

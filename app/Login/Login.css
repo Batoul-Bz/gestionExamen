@@ -1,0 +1,159 @@
+/* Login.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body, .page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+ 
+}
+
+/* HEADER */
+.header {
+  background-color: #192338;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.header .logo {
+  width: 150px;
+}
+
+.header_links {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.header_links button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 10px 0;
+  transition: 0.3s ease;
+}
+
+.header_links button:hover {
+  color: #B1C9FE;
+  transform: translateY(-3px);
+}
+
+
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 160px 40px 40px 40px;
+  flex: 1;
+  
+  background: linear-gradient(135deg, #192338 0%, #192338 20%, #4f63d6 78%, #8d9df2 90%, #ffffff 100%);
+
+ } 
+
+.login img {
+  width: 700px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+
+}
+.login-card {
+ 
+  z-index: 10;       
+  width: 320px;
+  padding: 32px 28px 40px;
+  border-radius: 26px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(18px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
+}
+
+.login-card h2 {
+  font-size: 32px;
+  margin-bottom: 24px;
+  text-align: center;
+}
+.login-page {
+  background: linear-gradient(135deg, #192338 0%, #192338 20%, #4f63d6 78%, #8d9df2 90%, #ffffff 100%);
+}
+.field {
+  margin-bottom: 18px;
+}
+
+.field label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+  opacity: 0.85;
+}
+
+.field input {
+  width: 100%;
+  padding: 10px 16px;
+  border-radius: 999px;
+  border: none;
+  outline: none;
+  background: #071e61;
+  color: #fff;
+}
+
+.field input::placeholder {
+  color: #cfd5ff;
+}
+
+.error {
+  display: block;
+  margin-top: 4px;
+  font-size: 12px;
+  color: red;
+}
+
+.submit-btn {
+  margin-top: 10px;
+  width: 60px;
+  height: 40px;
+  border-radius: 12px;
+  border: none;
+  background: #9ed1ff;
+  color: #13325a;
+  font-size: 20px;
+  cursor: pointer;
+  float: right;
+}
+.logi {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+}
+/* FOOTER */
+.footer {
+  background-color: #192338;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer img {
+  width: 100px;
+}

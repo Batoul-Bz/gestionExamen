@@ -1,0 +1,36 @@
+
+
+.stats-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 100px 0 20px; /* 100px حتى تنزل تحت الـ Header */
+  gap: 20px;
+}
+
+
+.card {
+  background-color: #0b1a57;
+  border-radius: 12px;
+  padding: 20px;
+  width: 30%;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card .icon {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+.card p {
+  margin: 5px 0 0;
+  font-size: 0.9rem;
+  color: #555;
+}
