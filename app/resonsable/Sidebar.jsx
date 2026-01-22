@@ -56,7 +56,7 @@ const menuItems = [
             <span className="label">Info</span>
           </li>
 
-          <li className="menu-item logout" onClick={() => router.push("/login")}>
+          <li className="menu-item logout" onClick={() => router.push("/Login")}>
             <FaSignOutAlt className="icon" />
             <span className="label">Logout</span>
           </li>

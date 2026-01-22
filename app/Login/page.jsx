@@ -27,7 +27,7 @@ export default function LoginPage() {
 
  const handleSubmit = (e) => {
   e.preventDefault();
-  router.push("/proffesseurs");
+  router.push("/resonsable/dashboard");
 };
 
   return (

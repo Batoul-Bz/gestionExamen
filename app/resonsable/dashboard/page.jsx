@@ -7,7 +7,6 @@ import "./dashboard.css";
 
 export default function DashboardPage() {
   const [open, setOpen] = useState(false);
-  const toggleOpen = () => setOpen((v) => !v);
 
   const stats = [
     { label: "Nombre examens", value: 32, icon: "/icon/examen.png" },
@@ -35,23 +34,21 @@ export default function DashboardPage() {
       <TopBar />
 
       <div className="layout">
-        <Sidebar open={open} toggleOpen={toggleOpen} />
+        <Sidebar open={open} toggleOpen={() => setOpen(!open)} />
 
         <main className={`content ${open ? "content-open" : ""}`}>
-          <div style={{width : "100%"}} className="dash-main">
+          <div className="dash-main">
 
-           
             <section className="dash-stats">
               {stats.map((s) => (
                 <div key={s.label} className="stat-card">
                   <div className="stat-number">{s.value}</div>
                   <div className="stat-label">{s.label}</div>
-                  {s.icon && <img src={s.icon} className="stat-icon" />}
+                  <img src={s.icon} className="stat-icon" />
                 </div>
               ))}
             </section>
 
-           
             <section className="dash-section">
               <div className="section-title">L’état des examens</div>
               <div className="pie-row">
@@ -64,13 +61,12 @@ export default function DashboardPage() {
               </div>
             </section>
 
-         
             <section className="dash-section">
               <div className="section-title">Nombre salles</div>
 
               <div className="bar-wrapper">
                 <div className="bar-legend">
-                  <span className="dot dot-dark" /> Les salles occuper
+                  <span className="dot dot-dark" /> Les salles occupées
                   <span className="dot dot-light" /> Les salles disponibles
                 </div>
 
@@ -78,17 +74,11 @@ export default function DashboardPage() {
                   {barData.map((d) => (
                     <div key={d.day} className="bar-column">
                       <div className="bar-group">
-                        <div
-                          className="bar bar-dark"
-                          style={{ height: `${d.occuper * 6}px` }}
-                        >
-                          <span className="bar-value">{d.occuper}</span>
+                        <div className="bar bar-dark" style={{ height: `${d.occuper * 6}px` }}>
+                          {d.occuper}
                         </div>
-                        <div
-                          className="bar bar-light"
-                          style={{ height: `${d.dispo * 6}px` }}
-                        >
-                          <span className="bar-value">{d.dispo}</span>
+                        <div className="bar bar-light" style={{ height: `${d.dispo * 6}px` }}>
+                          {d.dispo}
                         </div>
                       </div>
                       <div className="bar-day">{d.day}</div>
@@ -98,14 +88,13 @@ export default function DashboardPage() {
               </div>
             </section>
 
-            {}
             <section className="dash-section">
               <div className="section-title">Historique</div>
 
               <div className="history-list">
                 {historique.map((h) => (
                   <div key={h.id} className="history-row">
-                    <div className="history-main">
+                    <div>
                       <div className="history-title">{h.titre}</div>
                       <div className="history-desc">{h.desc}</div>
                     </div>
@@ -121,4 +110,3 @@ export default function DashboardPage() {
     </div>
   );
 }
-
