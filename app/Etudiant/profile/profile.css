@@ -1,0 +1,130 @@
+.page {
+  display: flex;
+}
+
+.content {
+  flex: 1;
+  margin-left: 220px;
+  margin-top: 70px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.profile-wrapper {
+  padding: 32px;
+  background: #e0e9fb;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.profile-card {
+  background: #f5f8ff;
+  border-radius: 24px;
+  padding: 24px 32px 32px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #082b73;
+  margin-bottom: 18px;
+}
+
+.personal-grid {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.photo-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.photo-circle {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #d4dff7;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.3s ease;
+}
+
+.photo-btn {
+  margin-top: 12px;
+  border: none;
+  color: #082b73;
+  font-weight: 600;
+  cursor: pointer;
+  background: #ffffff;
+  padding: 6px 12px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.personal-fields, .job-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.field-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+.field {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 150px;
+}
+
+.field.full {
+  flex: 1 0 100%;
+}
+
+.field label {
+  font-size: 14px;
+  color: #082b73;
+}
+
+.field input {
+  border-radius: 12px;
+  border: none;
+  padding: 8px 12px;
+  font-size: 14px;
+  background: #ffffff;
+  box-shadow: inset 0 0 0 1px #d4dff7;
+}
+
+.profile-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.footer-btn {
+  padding: 6px 14px;
+  font-size: 13px;
+  border-radius: 12px;
+  border: none;
+  background: #082b73;
+  color: #fff;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.footer-btn.main {
+  background: #0e3f8f;
+}

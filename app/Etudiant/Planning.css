@@ -1,0 +1,86 @@
+.layout {
+  display: flex;
+  min-height: 100vh;
+  background: #e0e9fb;
+}
+
+.main {
+  flex: 1;
+  margin-left: 220px;
+  margin-top: 70px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.student-planning-page {
+  background: #f5f8ff;
+  border-radius: 24px;
+  padding: 24px 32px 32px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+}
+
+.student-planning-page h2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #082b73;
+  margin-bottom: 18px;
+}
+
+.buttons-row {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.btn-print,
+.btn-pdf {
+  padding: 6px 14px;
+  font-size: 13px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+  color: #fff;
+}
+
+.btn-print {
+  background: #0e3f8f;
+}
+
+.btn-pdf {
+  background: #082b73;
+}
+
+.no-data {
+  font-size: 14px;
+  color: #555;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+.planning-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.planning-table th,
+.planning-table td {
+  padding: 10px 12px;
+  text-align: left;
+  border-bottom: 1px solid #d4dff7;
+  font-size: 14px;
+}
+
+.planning-table th {
+  background: #d4dff7;
+  color: #082b73;
+  font-weight: 600;
+}
+
+.planning-table tr:hover {
+  background: rgba(8, 43, 115, 0.05);
+}
