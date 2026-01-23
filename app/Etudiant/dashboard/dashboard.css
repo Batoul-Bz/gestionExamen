@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter, sans-serif;
+}
+
+body {
+  background: #f3f4f6;
+}
+
+.page {
+  min-height: 100vh;
+}
+
+.layout {
+  display: flex;
+  padding-top: 70px;
+}
+
+.content {
+  flex: 1;
+  padding: 25px;
+  margin-left: 150px;
+  transition: 0.3s;
+}
+
+.content-open {
+  margin-left: 80px;
+}
+
+.dash-main {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.dash-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.stat-card {
+  background: #6d68af;
+  padding: 22px;
+  border-radius: 16px;
+  position: relative;
+}
+
+.stat-number {
+  font-size: 32px;
+  font-weight: 700;
+  color: white;
+}
+
+.stat-label {
+  font-size: 15px;
+  color: #e5e7eb;
+}
+
+.stat-icon {
+  width: 55px;
+  opacity: 0.25;
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+}
+
+.dash-section {
+  background: white;
+  padding: 25px;
+  border-radius: 18px;
+}
+
+.section-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.fake-pie {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background: conic-gradient(
+    #3b82f6 0 35%,
+    #8b5cf6 35% 70%,
+    #9ca3af 70% 100%
+  );
+}
+
+.pie-row {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 4px;
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.dot-blue { background: #3b82f6; }
+.dot-purple { background: #8b5cf6; }
+.dot-grey { background: #9ca3af; }
+.dot-dark { background: #1f2937; }
+.dot-light { background: #9ca3af; }
+
+.bar-chart {
+  display: flex;
+  gap: 20px;
+  align-items: flex-end;
+}
+
+.bar-group {
+  display: flex;
+  gap: 6px;
+}
+
+.bar {
+  width:70px;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 6px;
+}
+
+.bar-dark {
+  background: linear-gradient(#34495e, #2c3e50);
+}
+
+.bar-light {
+  background: linear-gradient(#90b3c2, #95a5a6);
+}
+
+.bar-day {
+  margin-top: 8px;
+  text-align: center;
+  color: #6b7280;
+}
+
+.history-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.history-row {
+  background: #f9fafb;
+  padding: 18px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.history-title {
+  font-weight: 600;
+}
+
+.history-desc {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.history-btn {
+  border: none;
+  background: #e5e7eb;
+  padding: 8px 12px;
+  border-radius: 8px;
+}
