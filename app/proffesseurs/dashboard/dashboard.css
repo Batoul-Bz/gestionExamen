@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter, sans-serif;
+}
+
+body {
+  background: #f3f4f6;
+}
+
+.page {
+  min-height: 100vh;
+}
+
+.layout {
+  display: flex;
+  padding-top: 70px;
+}
+
+.content {
+  flex: 1;
+  padding: 25px;
+  margin-left: 150px;
+  transition: 0.3s;
+}
+
+.content-open {
+  margin-left: 80px;
+}
+
+.dash-main {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.dash-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.stat-card {
+  background: #4f46e5;
+  padding: 22px;
+  border-radius: 16px;
+  color: white;
+}
+
+.stat-number {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.stat-label {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.dash-section {
+  background: white;
+  padding: 25px;
+  border-radius: 18px;
+}
+
+.section-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.pie-row {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.pie {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background: conic-gradient(
+    #4f46e5 0 40%,
+    #22c55e 40% 70%,
+    #f59e0b 70% 100%
+  );
+}
+
+.pie-legend {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.legend-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 4px;
+  margin-right: 8px;
+}
+
+.dot-blue {
+  background: #4f46e5;
+}
+
+.dot-green {
+  background: #22c55e;
+}
+
+.dot-orange {
+  background: #f59e0b;
+}
+
+.exam-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.exam-card {
+  background: #f9fafb;
+  border-radius: 14px;
+  padding: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.exam-left {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.exam-subject {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.exam-meta {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.exam-badge {
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.badge-exam {
+  background: #e0e7ff;
+  color: #3730a3;
+}
+
+.badge-surveillance {
+  background: #ecfeff;
+  color: #155e75;
+}
