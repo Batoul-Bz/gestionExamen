@@ -1,4 +1,5 @@
 "use client";
+
 import React, { useState } from "react";
 import { useRouter } from "next/navigation";
 import { FaCopyright } from "react-icons/fa";
@@ -11,6 +12,7 @@ export default function LoginPage() {
   const [emailError, setEmailError] = useState("");
   const [password, setPassword] = useState("");
 
+  // handle email input and validation
   const handleEmailChange = (e) => {
     const value = e.target.value;
     setEmail(value);
@@ -25,21 +27,31 @@ export default function LoginPage() {
     }
   };
 
- const handleSubmit = (e) => {
-  e.preventDefault();
-  router.push("/resonsable/dashboard");
-};
+  
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    if (email === "admin@gmail.com" && password === "123456") {
+      router.push("/resonsable/dashboard"); // responsable
+    } else if (email === "teacher@gmail.com" && password === "123456") {
+      router.push("/proffesseurs/dashboard"); // professeur
+    } else if (email === "student@gmail.com" && password === "123456") {
+      router.push("/Etudiant/dashboard"); // étudiant
+    } else {
+      alert("Email ou Mot de passe incorrect");
+    }
+  };
 
   return (
     <div className="page">
-      
       <header className="header">
         <div className="logo-text">ExOrderIt</div>
 
         <div className="header_links">
           <button onClick={() => router.push("/")}>Home</button>
           <button onClick={() => router.push("/about")}>About</button>
-          <button style={{ color: "#B1C9FE", fontWeight: 600 }}
+          <button
+            style={{ color: "#B1C9FE", fontWeight: 600 }}
             className="active"
             onClick={() => router.push("/Login")}
           >
@@ -48,7 +60,6 @@ export default function LoginPage() {
         </div>
       </header>
 
-      
       <main className="login">
         <div className="logi">
           <div className="login-card">
@@ -63,9 +74,7 @@ export default function LoginPage() {
                   onChange={handleEmailChange}
                   placeholder="Email"
                 />
-                {emailError && (
-                  <span className="error">{emailError}</span>
-                )}
+                {emailError && <span className="error">{emailError}</span>}
               </div>
 
               <div className="field">
@@ -84,18 +93,15 @@ export default function LoginPage() {
             </form>
           </div>
 
-          
           <div className="images">
             <img src="/icon/welcom.png" alt="Welcome" />
           </div>
         </div>
       </main>
 
-      
       <footer className="footer">
-             <div className="logo-text">ExOrderIt © 2025</div>
-             
-           </footer>
+        <div className="logo-text">ExOrderIt © 2025</div>
+      </footer>
     </div>
   );
 }
