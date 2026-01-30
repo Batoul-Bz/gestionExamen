@@ -1,0 +1,121 @@
+/* [project]/app/chef_departement/profile/profile.css [app-client] (css) */
+.page {
+  display: flex;
+}
+
+.content {
+  flex: 1;
+  margin-top: 70px;
+  margin-left: 220px;
+  padding: 20px;
+}
+
+.profile-wrapper {
+  background: #e0e9fb;
+  min-height: 100vh;
+  padding: 32px;
+}
+
+.profile-card {
+  background: #f5f8ff;
+  border-radius: 24px;
+  margin-bottom: 28px;
+  padding: 24px 32px 32px;
+  box-shadow: 0 8px 18px #00000014;
+}
+
+.card-title {
+  color: #082b73;
+  margin-bottom: 18px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.personal-grid {
+  grid-template-columns: 220px 1fr;
+  gap: 24px;
+  display: grid;
+}
+
+.photo-col {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.photo-circle {
+  background: radial-gradient(circle at 30% 20%, #fff 0, #0d3b90 70%) center / cover;
+  border-radius: 50%;
+  width: 140px;
+  height: 140px;
+  overflow: hidden;
+}
+
+.photo-btn {
+  color: #082b73;
+  cursor: pointer;
+  border: none;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.personal-fields, .job-grid {
+  flex-direction: column;
+  gap: 14px;
+  display: flex;
+}
+
+.field-row {
+  gap: 18px;
+  display: flex;
+}
+
+.field {
+  flex-direction: column;
+  flex: 1;
+  gap: 4px;
+  display: flex;
+}
+
+.field.full {
+  flex: 1 0 100%;
+}
+
+.field label {
+  color: #082b73;
+  font-size: 14px;
+}
+
+.field input {
+  background: #fff;
+  border: none;
+  border-radius: 14px;
+  padding: 8px 14px;
+  font-size: 14px;
+  box-shadow: inset 0 0 0 1px #d4dff7;
+}
+
+.profile-footer {
+  justify-content: center;
+  gap: 16px;
+  margin-top: 24px;
+  display: flex;
+}
+
+.footer-btn {
+  color: #fff;
+  cursor: pointer;
+  background: #082b73;
+  border: none;
+  border-radius: 18px;
+  padding: 8px 22px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.footer-btn.main {
+  background: #0e3f8f;
+}
+
+/*# sourceMappingURL=app_chef_departement_profile_profile_css_bad6b30c._.single.css.map*/

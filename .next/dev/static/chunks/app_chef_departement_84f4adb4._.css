@@ -1,0 +1,459 @@
+/* [project]/app/chef_departement/Planning/Planning.css [app-client] (css) */
+.layout {
+  background: #f5f7ff;
+  height: 100vh;
+  font-family: Segoe UI, sans-serif;
+  display: flex;
+}
+
+.sidebar {
+  z-index: 200;
+  background: linear-gradient(#0b1a57, #132c7c);
+  flex-direction: column;
+  width: 60px;
+  height: 100vh;
+  padding-top: 20px;
+  transition: width .4s;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.sidebar-item {
+  color: #fff;
+  cursor: pointer;
+  white-space: nowrap;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  display: flex;
+  overflow: hidden;
+}
+
+.sidebar-item .icon {
+  font-size: 20px;
+}
+
+.sidebar-item .text {
+  opacity: 0;
+  margin-left: 8px;
+  transition: opacity .3s, margin .3s;
+}
+
+.sidebar:hover .text {
+  opacity: 1;
+}
+
+.main {
+  z-index: 100;
+  flex-direction: column;
+  flex: 1;
+  margin-left: 60px;
+  padding-top: 64px;
+  transition: margin-left .4s;
+  display: flex;
+}
+
+.sidebar:hover ~ .main {
+  margin-left: 220px;
+}
+
+.planning-page {
+  padding: 16px 24px;
+  overflow-y: auto;
+}
+
+.filters-row {
+  gap: 12px;
+  margin-bottom: 16px;
+  display: flex;
+}
+
+.filter-select {
+  background: #e6ecff;
+  border: 1px solid #d0d4ff;
+  border-radius: 18px;
+  padding: 6px 12px;
+  font-size: 13px;
+}
+
+.no-data {
+  text-align: center;
+  color: #555;
+  margin-top: 20px;
+}
+
+.planning-table {
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 10px;
+  width: 100%;
+  font-size: 13px;
+  overflow: hidden;
+}
+
+.planning-table th {
+  color: #fff;
+  background: #0b2c73;
+  padding: 10px;
+}
+
+.planning-table td {
+  text-align: center;
+  border-bottom: 1px solid #eee;
+  padding: 8px;
+}
+
+.planning-table tr:hover {
+  background: #f3f6ff;
+}
+
+.status-badge {
+  text-transform: capitalize;
+  border-radius: 12px;
+  padding: 4px 10px;
+  font-size: 11px;
+}
+
+.status-pending {
+  color: #3a2b00;
+  background: #ffcf5c;
+}
+
+.status-accepted {
+  color: #003515;
+  background: #5fd47f;
+}
+
+.status-rejected {
+  color: #3b0000;
+  background: #ff7b7b;
+}
+
+.btn-accept {
+  cursor: pointer;
+  background: #55d68c;
+  border: none;
+  border-radius: 14px;
+  margin-right: 4px;
+  padding: 4px 10px;
+  font-size: 11px;
+}
+
+.btn-cancel {
+  cursor: pointer;
+  background: #ff8080;
+  border: none;
+  border-radius: 14px;
+  padding: 4px 10px;
+  font-size: 11px;
+}
+
+.modal-overlay {
+  background: #0006;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: fixed;
+  inset: 0;
+}
+
+.modal {
+  background: #f9f9ff;
+  border-radius: 12px;
+  width: 360px;
+  padding: 16px;
+}
+
+.modal h3 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.modal-textarea {
+  border: 1px solid #c6c6ff;
+  border-radius: 10px;
+  width: 100%;
+  min-height: 90px;
+  padding: 8px;
+}
+
+.modal-actions {
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 10px;
+  display: flex;
+}
+
+.btn-primary {
+  color: #fff;
+  cursor: pointer;
+  background: #2699fb;
+  border: none;
+  border-radius: 16px;
+  padding: 6px 14px;
+}
+
+.btn-secondary {
+  color: #002b6b;
+  cursor: pointer;
+  background: #d4d8ff;
+  border: none;
+  border-radius: 16px;
+  padding: 6px 14px;
+}
+
+.btn-publier {
+  color: #fff;
+  cursor: pointer;
+  background: #2699fb;
+  border: none;
+  border-radius: 16px;
+  margin-bottom: 12px;
+  padding: 6px 14px;
+  font-size: 13px;
+}
+
+.toast {
+  color: #fff;
+  z-index: 9999;
+  background: #5fd47f;
+  border-radius: 8px;
+  padding: 12px 20px;
+  font-weight: bold;
+  animation: .5s slideDown;
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 2px 8px #0003;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateX(-50%)translateY(-50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(-50%)translateY(0);
+  }
+}
+
+/* [project]/app/chef_departement/SideBar.css [app-client] (css) */
+.sidebar {
+  color: #fff;
+  z-index: 100;
+  background: linear-gradient(#0b1a57, #132c7c);
+  flex-direction: column;
+  justify-content: space-between;
+  width: 60px;
+  height: calc(100vh - 70px);
+  padding: 16px 8px;
+  transition: width .3s;
+  display: flex;
+  position: fixed;
+  top: 70px;
+  left: 0;
+  overflow: hidden;
+}
+
+.sidebar:hover {
+  width: 220px;
+}
+
+.sidebar nav ul, .bottom-icons ul {
+  margin-top: 45px;
+  padding: 0;
+  list-style: none;
+}
+
+.menu-item, .menu-toggle {
+  cursor: pointer;
+  border-radius: 10px;
+  align-items: center;
+  gap: 14px;
+  margin: 10px 0;
+  padding: 10px;
+  transition: all .25s;
+  display: flex;
+}
+
+.icon {
+  text-align: center;
+  min-width: 36px;
+  font-size: 1.4rem;
+}
+
+.label {
+  opacity: 0;
+  white-space: nowrap;
+  font-size: 14px;
+  transition: opacity .3s;
+}
+
+.sidebar:hover .label {
+  opacity: 1;
+}
+
+.menu-item:hover, .menu-toggle:hover {
+  background-color: #ffffff1f;
+  transform: translateX(4px);
+}
+
+.menu-item.active {
+  color: #0b1a57;
+  background-color: #fff;
+}
+
+.menu-item.active .icon {
+  color: #0b1a57;
+}
+
+.bottom-icons {
+  margin-bottom: 20px;
+}
+
+.logout:hover {
+  background-color: #ff000026;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 55px;
+  }
+
+  .sidebar:hover {
+    width: 180px;
+  }
+
+  .label {
+    font-size: 13px;
+  }
+}
+
+/* [project]/app/chef_departement/styles.css [app-client] (css) */
+.top-bar {
+  z-index: 200;
+  background-color: #0b1a57;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  padding: 0 25px;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 3px 8px #00000026;
+}
+
+.logo-text {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.user-box {
+  align-items: center;
+  gap: 15px;
+  display: flex;
+  position: relative;
+}
+
+.notif-wrapper {
+  position: relative;
+}
+
+.notif-btn {
+  color: #fff;
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 1.3rem;
+  position: relative;
+}
+
+.notif-badge {
+  background: red;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.notif-dropdown {
+  color: #0b1a57;
+  z-index: 300;
+  background: #fff;
+  border-radius: 12px;
+  flex-direction: column;
+  width: 260px;
+  padding: 10px 0;
+  display: flex;
+  position: absolute;
+  top: 45px;
+  right: 0;
+  box-shadow: 0 6px 20px #0003;
+}
+
+.notif-item {
+  border-bottom: 1px solid #eee;
+  flex-direction: column;
+  gap: 4px;
+  padding: 10px 16px;
+  display: flex;
+}
+
+.notif-item:last-child {
+  border-bottom: none;
+}
+
+.notif-text {
+  font-size: 14px;
+}
+
+.notif-time {
+  color: #888;
+  font-size: 12px;
+}
+
+.user-info {
+  cursor: pointer;
+  background: #fff;
+  border: none;
+  border-radius: 12px;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 12px;
+  display: flex;
+}
+
+.user-avatar {
+  color: #fff;
+  background: #0b1a57;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  display: flex;
+}
+
+.user-text-main {
+  color: #0b1a57;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.user-text-sub {
+  color: #666;
+  font-size: 12px;
+}
+
+/*# sourceMappingURL=app_chef_departement_84f4adb4._.css.map*/

@@ -1,0 +1,159 @@
+[00:00:02.414] Server  LOG      ✓ Ready in 1699ms
+[00:00:26.299] Server  WARN     ⚠ Cross origin request detected from 192.168.1.4 to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
+[00:00:26.331] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:49.321] Browser LOG     {"token":"6|2VYOnhYRBYoJQpVJ4tncRdnk0DtZixKYQ6xc9Xgx47b7afe2","role":"admin","user":{"id":4,"name":"admin","email":"admin@gmail.com","email_verified_at":null,"created_at":"2026-01-29T20:10:38.000000Z","updated_at":"2026-01-29T20:10:38.000000Z","role":"admin"}}
+[00:00:49.321] Browser LOG     Login successful {"role":"admin","token":"6|2VYOnhYRBYoJQpVJ4tncRdnk0DtZixKYQ6xc9Xgx47b7afe2","user":{"created_at":"2026-01-29T20:10:38.000000Z","email":"admin@gmail.com","email_verified_at":null,"id":4,"name":"admin","role":"admin","updated_at":"2026-01-29T20:10:38.000000Z"}}
+[00:00:50.555] Browser LOG     Token from Login: 6|2VYOnhYRBYoJQpVJ4tncRdnk0DtZixKYQ6xc9Xgx47b7afe2
+[00:00:50.555] Browser LOG     Token from Login: 6|2VYOnhYRBYoJQpVJ4tncRdnk0DtZixKYQ6xc9Xgx47b7afe2
+[00:00:56.169] Browser ERROR   {}
+[00:00:56.727] Browser ERROR   {}
+[00:01:47.692] Server  LOG      ✓ Compiled in 63ms
+[00:01:52.147] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:03:01.331] Server  LOG      ✓ Compiled in 526ms
+[00:03:20.132] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:03:49.538] Server  LOG      ✓ Compiled in 193ms
+[00:03:56.815] Browser ERROR   uncaughtError: ReferenceError: comment is not defined
+[00:04:00.880] Browser ERROR   unhandledRejection: ReferenceError: comment is not defined
+[00:04:02.733] Browser ERROR   unhandledRejection: ReferenceError: comment is not defined
+[00:06:59.983] Server  LOG      ✓ Compiled in 292ms
+[00:07:08.056] Browser ERROR   uncaughtError: ReferenceError: comment is not defined
+[00:08:12.754] Server  LOG      ✓ Compiled in 133ms
+[00:11:38.985] Server  LOG      ✓ Compiled in 171ms
+[00:15:09.446] Server  LOG      ✓ Compiled in 142ms
+[00:18:15.894] Server  LOG      ✓ Compiled in 213ms
+[00:18:26.383] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:19:46.499] Server  LOG      ✓ Compiled in 160ms
+[00:21:41.658] Server  LOG      ✓ Compiled in 160ms
+[00:23:02.425] Server  LOG      ✓ Compiled in 248ms
+[00:25:59.150] Server  LOG      ✓ Compiled in 186ms
+[00:26:02.589] Browser LOG     {"date":"11/01/2026","day":"Samedi","group":"L1-G1","id":1,"level":"Licence 1","module":"Algorithme 1","room":"A1","status":"pending","teacher":"Mme Algorithme","time":"08:00"}
+[00:26:02.956] Browser LOG     {"date":"11/01/2026","day":"Samedi","group":"L1-G1","id":1,"level":"Licence 1","module":"Algorithme 1","room":"A1","status":"pending","teacher":"Mme Algorithme","time":"08:00"}
+[00:26:51.456] Browser LOG     {"date":"11/01/2026","day":"Samedi","group":"L1-G1","id":1,"level":"Licence 1","module":"Algorithme 1","room":"A1","status":"pending","teacher":"Mme Algorithme","time":"08:00"}
+[00:28:29.907] Server  LOG      ✓ Compiled in 248ms
+[00:28:39.686] Browser LOG     {"date":"11/01/2026","day":"Samedi","group":"L1-G1","id":1,"level":"Licence 1","module":"Algorithme 1","room":"A1","status":"pending","teacher":"Mme Algorithme","time":"08:00"}
+[00:29:01.930] Server  LOG      ✓ Compiled in 198ms
+[00:29:15.470] Browser LOG     {"date":"11/01/2026","day":"Samedi","group":"L1-G1","id":1,"level":"Licence 1","module":"Algorithme 1","room":"A1","status":"pending","teacher":"Mme Algorithme","time":"08:00"}
+[00:31:03.247] Server  LOG      ✓ Compiled in 215ms
+[00:31:08.794] Browser LOG     id: 1
+[00:31:08.794] Browser LOG     {"date":"11/01/2026","day":"Samedi","group":"L1-G1","id":1,"level":"Licence 1","module":"Algorithme 1","room":"A1","status":"pending","teacher":"Mme Algorithme","time":"08:00"}
+[00:31:16.864] Browser LOG     id: 1
+[00:31:16.864] Browser LOG     {"date":"11/01/2026","day":"Samedi","group":"L1-G1","id":1,"level":"Licence 1","module":"Algorithme 1","room":"A1","status":"pending","teacher":"Mme Algorithme","time":"08:00"}
+[00:39:02.852] Server  LOG      ✓ Compiled in 232ms
+[00:39:09.402] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:39:16.443] Browser LOG     id: 1
+[00:39:16.443] Browser LOG     {"date":"11/01/2026","day":"Samedi","group":"L1-G1","id":1,"level":"Licence 1","module":"Algorithme 1","room":"A1","status":"pending","teacher":"Mme Algorithme","time":"08:00"}
+[00:47:16.315] Server  LOG      ✓ Compiled in 254ms
+[00:49:53.080] Browser LOG     id: 1
+[00:49:53.081] Browser LOG     {"date":"11/01/2026","day":"Samedi","group":"L1-G1","id":1,"level":"Licence 1","module":"Algorithme 1","room":"A1","status":"pending","teacher":"Mme Algorithme","time":"08:00"}
+[00:50:40.976] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:50:42.151] Browser LOG     id: 1
+[00:50:48.354] Browser LOG     id: 1
+[00:50:48.354] Browser LOG     {"date":"11/01/2026","day":"Samedi","group":"L1-G1","id":1,"level":"Licence 1","module":"Algorithme 1","room":"A1","statut":"pending","teacher":"Mme Algorithme","time":"08:00"}
+[00:50:55.027] Browser LOG     id: 1
+[00:50:55.027] Browser LOG     {"date":"11/01/2026","day":"Samedi","group":"L1-G1","id":1,"level":"Licence 1","module":"Algorithme 1","room":"A1","statut":"pending","teacher":"Mme Algorithme","time":"08:00"}
+[00:51:42.037] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:51:45.543] Browser LOG     id: 1
+[00:51:46.599] Browser LOG     id: 1
+[00:51:56.819] Browser LOG     id: 1
+[00:51:56.819] Browser LOG     {"date":"11/01/2026","day":"Samedi","group":"L1-G1","id":1,"level":"Licence 1","module":"Algorithme 1","room":"A1","statut":"pending","teacher":"Mme Algorithme","time":"08:00"}
+[00:54:13.599] Server  LOG      ✓ Compiled in 151ms
+[00:54:22.060] Browser LOG     id: 1
+[00:54:22.061] Browser LOG     {"date":"11/01/2026","day":"Samedi","group":"L1-G1","id":1,"level":"Licence 1","module":"Algorithme 1","room":"A1","statut":"pending","teacher":"Mme Algorithme","time":"08:00"}
+[00:57:39.430] Server  LOG      ✓ Compiled in 178ms
+[00:57:49.148] Browser LOG     id: 1
+[00:57:49.148] Browser LOG     {"date":"11/01/2026","day":"Samedi","group":"L1-G1","id":1,"level":"Licence 1","module":"Algorithme 1","room":"A1","statut":"pending","teacher":"Mme Algorithme","time":"08:00"}
+[01:06:50.079] Browser LOG     id: 1
+[01:06:50.079] Browser LOG     {"date":"11/01/2026","day":"Samedi","group":"L1-G1","id":1,"level":"Licence 1","module":"Algorithme 1","room":"A1","statut":"pending","teacher":"Mme Algorithme","time":"08:00"}
+[01:06:57.100] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:07:09.920] Browser LOG     id: 1
+[01:07:09.920] Browser LOG     {"date":"11/01/2026","day":"Samedi","group":"L1-G1","id":1,"level":"Licence 1","module":"Algorithme 1","room":"A1","statut":"pending","teacher":"Mme Algorithme","time":"08:00"}
+[01:08:58.916] Browser LOG     id: 1
+[01:08:58.916] Browser LOG     {"date":"11/01/2026","day":"Samedi","group":"L1-G1","id":1,"level":"Licence 1","module":"Algorithme 1","room":"A1","statut":"pending","teacher":"Mme Algorithme","time":"08:00"}
+[01:11:27.858] Browser LOG     id: 1
+[01:11:27.859] Browser LOG     {"date":"11/01/2026","day":"Samedi","group":"L1-G1","id":1,"level":"Licence 1","module":"Algorithme 1","room":"A1","statut":"pending","teacher":"Mme Algorithme","time":"08:00"}
+[01:19:31.975] Server  LOG      ✓ Compiled in 101ms
+[01:20:06.979] Server  LOG      ✓ Compiled in 97ms
+[01:20:28.249] Browser LOG     selectedPlanning: {"date":"11/01/2026","day":"Samedi","group":"L1-G1","id":1,"level":"Licence 1","module":"Algorithme 1","room":"A1","statut":"pending","teacher":"Mme Algorithme","time":"08:00"}
+[01:20:28.249] Browser LOG     cancelComment: hello world!
+[01:20:28.249] Browser LOG     id: 1
+[01:20:28.249] Browser LOG     {"date":"11/01/2026","day":"Samedi","group":"L1-G1","id":1,"level":"Licence 1","module":"Algorithme 1","room":"A1","statut":"pending","teacher":"Mme Algorithme","time":"08:00"}
+[01:28:45.980] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:29:03.133] Browser LOG     selectedPlanning: {"date":"11/01/2026","day":"Samedi","group":"L1-G1","id":1,"level":"Licence 1","module":"Algorithme 1","room":"A1","statut":"pending","teacher":"Mme Algorithme","time":"08:00"}
+[01:29:03.133] Browser LOG     cancelComment: hello world!
+
+[01:29:03.133] Browser LOG     id: 1
+[01:29:03.133] Browser LOG     {"date":"11/01/2026","day":"Samedi","group":"L1-G1","id":1,"level":"Licence 1","module":"Algorithme 1","room":"A1","statut":"pending","teacher":"Mme Algorithme","time":"08:00"}
+[01:34:46.974] Server  LOG      ✓ Compiled in 70ms
+[01:35:02.082] Browser LOG     selectedPlanning: {"date":"11/01/2026","day":"Samedi","group":"L1-G1","id":1,"level":"Licence 1","module":"Algorithme 1","room":"A1","statut":"pending","teacher":"Mme Algorithme","time":"08:00"}
+[01:35:02.082] Browser LOG     cancelComment: hello world!
+
+[01:35:02.082] Browser LOG     id: 1
+[01:35:02.083] Browser LOG     {"date":"11/01/2026","day":"Samedi","group":"L1-G1","id":1,"level":"Licence 1","module":"Algorithme 1","room":"A1","statut":"pending","teacher":"Mme Algorithme","time":"08:00"}
+[01:37:49.573] Browser LOG     selectedPlanning: {"date":"11/01/2026","day":"Samedi","group":"L1-G1","id":1,"level":"Licence 1","module":"Algorithme 1","room":"A1","statut":"pending","teacher":"Mme Algorithme","time":"08:00"}
+[01:37:49.573] Browser LOG     cancelComment: hello world!
+
+[01:37:49.574] Browser LOG     id: 1
+[01:37:49.574] Browser LOG     {"date":"11/01/2026","day":"Samedi","group":"L1-G1","id":1,"level":"Licence 1","module":"Algorithme 1","room":"A1","statut":"pending","teacher":"Mme Algorithme","time":"08:00"}
+[01:39:39.870] Browser LOG     selectedPlanning: {"date":"11/01/2026","day":"Samedi","group":"L1-G1","id":1,"level":"Licence 1","module":"Algorithme 1","room":"A1","statut":"pending","teacher":"Mme Algorithme","time":"08:00"}
+[01:39:39.870] Browser LOG     cancelComment: hello world!
+
+[01:39:39.870] Browser LOG     id: 1
+[01:39:39.870] Browser LOG     {"date":"11/01/2026","day":"Samedi","group":"L1-G1","id":1,"level":"Licence 1","module":"Algorithme 1","room":"A1","statut":"pending","teacher":"Mme Algorithme","time":"08:00"}
+[01:39:46.802] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:39:55.450] Browser LOG     selectedPlanning: {"date":"11/01/2026","day":"Samedi","group":"L1-G1","id":1,"level":"Licence 1","module":"Algorithme 1","room":"A1","statut":"pending","teacher":"Mme Algorithme","time":"08:00"}
+[01:39:55.450] Browser LOG     cancelComment: hello
+[01:39:55.450] Browser LOG     id: 1
+[01:39:55.450] Browser LOG     {"date":"11/01/2026","day":"Samedi","group":"L1-G1","id":1,"level":"Licence 1","module":"Algorithme 1","room":"A1","statut":"pending","teacher":"Mme Algorithme","time":"08:00"}
+[01:45:02.162] Browser LOG     selectedPlanning: {"date":"11/01/2026","day":"Samedi","group":"L1-G1","id":1,"level":"Licence 1","module":"Algorithme 1","room":"A1","statut":"pending","teacher":"Mme Algorithme","time":"08:00"}
+[01:45:02.163] Browser LOG     cancelComment: hello
+[01:45:02.163] Browser LOG     id: 1
+[01:45:02.163] Browser LOG     {"date":"11/01/2026","day":"Samedi","group":"L1-G1","id":1,"level":"Licence 1","module":"Algorithme 1","room":"A1","statut":"pending","teacher":"Mme Algorithme","time":"08:00"}
+[01:45:39.672] Browser LOG     selectedPlanning: {"date":"11/01/2026","day":"Samedi","group":"L1-G1","id":1,"level":"Licence 1","module":"Algorithme 1","room":"A1","statut":"pending","teacher":"Mme Algorithme","time":"08:00"}
+[01:45:39.672] Browser LOG     cancelComment: hello
+[01:45:39.672] Browser LOG     id: 1
+[01:45:39.672] Browser LOG     {"date":"11/01/2026","day":"Samedi","group":"L1-G1","id":1,"level":"Licence 1","module":"Algorithme 1","room":"A1","statut":"pending","teacher":"Mme Algorithme","time":"08:00"}
+[01:47:18.766] Browser LOG     selectedPlanning: {"date":"11/01/2026","day":"Samedi","group":"L1-G1","id":1,"level":"Licence 1","module":"Algorithme 1","room":"A1","statut":"pending","teacher":"Mme Algorithme","time":"08:00"}
+[01:47:18.766] Browser LOG     cancelComment: hello
+[01:47:18.766] Browser LOG     id: 1
+[01:47:18.766] Browser LOG     {"date":"11/01/2026","day":"Samedi","group":"L1-G1","id":1,"level":"Licence 1","module":"Algorithme 1","room":"A1","statut":"pending","teacher":"Mme Algorithme","time":"08:00"}
+[01:47:36.520] Browser LOG     selectedPlanning: {"date":"11/01/2026","day":"Samedi","group":"L1-G1","id":1,"level":"Licence 1","module":"Algorithme 1","room":"A1","statut":"pending","teacher":"Mme Algorithme","time":"08:00"}
+[01:47:36.520] Browser LOG     cancelComment: hello
+[01:47:36.520] Browser LOG     id: 1
+[01:47:36.520] Browser LOG     {"date":"11/01/2026","day":"Samedi","group":"L1-G1","id":1,"level":"Licence 1","module":"Algorithme 1","room":"A1","statut":"pending","teacher":"Mme Algorithme","time":"08:00"}
+[01:56:09.564] Browser LOG     selectedPlanning: {"date":"11/01/2026","day":"Samedi","group":"L1-G1","id":1,"level":"Licence 1","module":"Algorithme 1","room":"A1","statut":"pending","teacher":"Mme Algorithme","time":"08:00"}
+[01:56:09.564] Browser LOG     cancelComment: hello
+[01:56:09.564] Browser LOG     id: 1
+[01:56:09.564] Browser LOG     {"date":"11/01/2026","day":"Samedi","group":"L1-G1","id":1,"level":"Licence 1","module":"Algorithme 1","room":"A1","statut":"pending","teacher":"Mme Algorithme","time":"08:00"}
+[01:56:09.925] Browser ERROR   unhandledRejection: TypeError: Failed to fetch
+[01:57:44.994] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:57:51.757] Browser LOG     selectedPlanning: {"date":"11/01/2026","day":"Samedi","group":"L1-G1","id":1,"level":"Licence 1","module":"Algorithme 1","room":"A1","statut":"pending","teacher":"Mme Algorithme","time":"08:00"}
+[01:57:51.757] Browser LOG     cancelComment: hello
+[01:57:51.757] Browser LOG     id: 1
+[01:57:51.757] Browser LOG     {"date":"11/01/2026","day":"Samedi","group":"L1-G1","id":1,"level":"Licence 1","module":"Algorithme 1","room":"A1","statut":"pending","teacher":"Mme Algorithme","time":"08:00"}
+[02:04:46.738] Browser LOG     selectedPlanning: {"date":"11/01/2026","day":"Samedi","group":"L1-G1","id":1,"level":"Licence 1","module":"Algorithme 1","room":"A1","statut":"pending","teacher":"Mme Algorithme","time":"08:00"}
+[02:04:46.738] Browser LOG     cancelComment: hello
+[02:04:46.738] Browser LOG     id: 1
+[02:04:46.738] Browser LOG     {"date":"11/01/2026","day":"Samedi","group":"L1-G1","id":1,"level":"Licence 1","module":"Algorithme 1","room":"A1","statut":"pending","teacher":"Mme Algorithme","time":"08:00"}
+[02:07:17.316] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:07:32.352] Browser LOG     id: 1
+[02:07:32.671] Browser ERROR   unhandledRejection: TypeError: Failed to fetch
+[02:07:49.664] Browser LOG     selectedPlanning: {"date":"11/01/2026","day":"Samedi","group":"L1-G1","id":1,"level":"Licence 1","module":"Algorithme 1","room":"A1","statut":"pending","teacher":"Mme Algorithme","time":"08:00"}
+[02:07:49.664] Browser LOG     cancelComment: م
+[02:07:49.664] Browser LOG     id: 1
+[02:07:49.664] Browser LOG     {"date":"11/01/2026","day":"Samedi","group":"L1-G1","id":1,"level":"Licence 1","module":"Algorithme 1","room":"A1","statut":"pending","teacher":"Mme Algorithme","time":"08:00"}
+[02:07:49.966] Browser ERROR   unhandledRejection: TypeError: Failed to fetch
+[02:09:10.206] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:09:11.161] Browser LOG     id: 1
+[02:09:17.703] Browser LOG     selectedPlanning: {"date":"11/01/2026","day":"Samedi","group":"L1-G1","id":1,"level":"Licence 1","module":"Algorithme 1","room":"A1","statut":"pending","teacher":"Mme Algorithme","time":"08:00"}
+[02:09:17.703] Browser LOG     cancelComment: مسينبكس
+[02:09:17.703] Browser LOG     id: 1
+[02:09:17.703] Browser LOG     {"date":"11/01/2026","day":"Samedi","group":"L1-G1","id":1,"level":"Licence 1","module":"Algorithme 1","room":"A1","statut":"pending","teacher":"Mme Algorithme","time":"08:00"}
+[02:12:26.637] Browser LOG     selectedPlanning: {"date":"11/01/2026","day":"Samedi","group":"L1-G1","id":1,"level":"Licence 1","module":"Algorithme 1","room":"A1","statut":"pending","teacher":"Mme Algorithme","time":"08:00"}
+[02:12:26.637] Browser LOG     cancelComment: kjhj
+[02:12:26.637] Browser LOG     id: 1
+[02:12:26.637] Browser LOG     {"date":"11/01/2026","day":"Samedi","group":"L1-G1","id":1,"level":"Licence 1","module":"Algorithme 1","room":"A1","statut":"pending","teacher":"Mme Algorithme","time":"08:00"}
+[02:13:09.736] Browser LOG     selectedPlanning: {"date":"11/01/2026","day":"Samedi","group":"L1-G1","id":1,"level":"Licence 1","module":"Algorithme 1","room":"A1","statut":"pending","teacher":"Mme Algorithme","time":"08:00"}
+[02:13:09.736] Browser LOG     cancelComment: kjhj
+[02:13:09.736] Browser LOG     id: 1
+[02:13:09.736] Browser LOG     {"date":"11/01/2026","day":"Samedi","group":"L1-G1","id":1,"level":"Licence 1","module":"Algorithme 1","room":"A1","statut":"pending","teacher":"Mme Algorithme","time":"08:00"}

@@ -1,0 +1,123 @@
+/* [project]/app/chef_departement/styles.css [app-client] (css) */
+.top-bar {
+  z-index: 200;
+  background-color: #0b1a57;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  padding: 0 25px;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 3px 8px #00000026;
+}
+
+.logo-text {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.user-box {
+  align-items: center;
+  gap: 15px;
+  display: flex;
+  position: relative;
+}
+
+.notif-wrapper {
+  position: relative;
+}
+
+.notif-btn {
+  color: #fff;
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 1.3rem;
+  position: relative;
+}
+
+.notif-badge {
+  background: red;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.notif-dropdown {
+  color: #0b1a57;
+  z-index: 300;
+  background: #fff;
+  border-radius: 12px;
+  flex-direction: column;
+  width: 260px;
+  padding: 10px 0;
+  display: flex;
+  position: absolute;
+  top: 45px;
+  right: 0;
+  box-shadow: 0 6px 20px #0003;
+}
+
+.notif-item {
+  border-bottom: 1px solid #eee;
+  flex-direction: column;
+  gap: 4px;
+  padding: 10px 16px;
+  display: flex;
+}
+
+.notif-item:last-child {
+  border-bottom: none;
+}
+
+.notif-text {
+  font-size: 14px;
+}
+
+.notif-time {
+  color: #888;
+  font-size: 12px;
+}
+
+.user-info {
+  cursor: pointer;
+  background: #fff;
+  border: none;
+  border-radius: 12px;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 12px;
+  display: flex;
+}
+
+.user-avatar {
+  color: #fff;
+  background: #0b1a57;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  display: flex;
+}
+
+.user-text-main {
+  color: #0b1a57;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.user-text-sub {
+  color: #666;
+  font-size: 12px;
+}
+
+/*# sourceMappingURL=app_chef_departement_styles_css_bad6b30c._.single.css.map*/

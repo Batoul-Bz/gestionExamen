@@ -1,0 +1,275 @@
+/* [project]/app/about/about.css [app-client] (css) */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Poppins, sans-serif;
+}
+
+body {
+  color: #fff;
+  background: linear-gradient(135deg, #192338 0%, #4f63d6 50%, #8d9df2 100%);
+  flex-direction: column;
+  min-height: 100vh;
+  display: flex;
+}
+
+.page {
+  flex-direction: column;
+  min-height: 100vh;
+  display: flex;
+}
+
+.header {
+  z-index: 999;
+  background-color: #192338f2;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 15px 30px;
+  display: flex;
+  position: fixed;
+  top: 0;
+  box-shadow: 0 4px 10px #0000004d;
+}
+
+.logo-text {
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.header_links {
+  align-items: center;
+  gap: 30px;
+  display: flex;
+}
+
+.header_links button {
+  color: #fff;
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  transition: all .3s;
+}
+
+.header_links button:hover {
+  color: #b1c9fe;
+  transform: translateY(-3px);
+}
+
+.about {
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 140px);
+  padding: 160px 20px 100px;
+  display: flex;
+}
+
+.about-container {
+  opacity: 0;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+  max-width: 1200px;
+  animation: 1s forwards fadeIn;
+  display: flex;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.card {
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  background: linear-gradient(135deg, #8fb3e299, #7896ff99);
+  border-radius: 25px;
+  flex: 400px;
+  max-width: 600px;
+  padding: 45px 35px;
+  transition: transform .3s, box-shadow .3s, background .5s;
+  box-shadow: 0 15px 35px #0000004d;
+}
+
+.card:hover {
+  background: linear-gradient(135deg, #7896ffb3, #8fb3e2b3);
+  transform: translateY(-7px);
+  box-shadow: 0 25px 50px #00000059;
+}
+
+.card h1, .card h2 {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.card h1 {
+  margin-bottom: 25px;
+  font-size: 2.2rem;
+}
+
+.card h2 {
+  margin-top: 35px;
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+}
+
+.card p {
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 1.6;
+  transition: transform .3s;
+  display: flex;
+}
+
+.card p:hover {
+  transform: translateX(5px);
+}
+
+.icon {
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+}
+
+.about-image {
+  flex: 400px;
+  justify-content: center;
+  display: flex;
+}
+
+.about-image img {
+  border-radius: 25px;
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  transition: transform .3s;
+  box-shadow: 0 15px 40px #0000004d;
+}
+
+.about-image img:hover {
+  transform: scale(1.05);
+}
+
+.footer {
+  color: #fff;
+  text-align: center;
+  background: #192338f2;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 40px 20px;
+  display: flex;
+}
+
+.footer-title {
+  letter-spacing: .5px;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.footer-contact {
+  flex-direction: flex;
+  align-items: center;
+  gap: 15px;
+  display: flex;
+}
+
+.contact-item {
+  background: #ffffff1a;
+  border-radius: 30px;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 18px;
+  font-size: 14px;
+  transition: all .3s;
+  display: flex;
+}
+
+.contact-item:hover {
+  background: #b1c9fe33;
+  transform: translateY(-2px);
+}
+
+.contact-item a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.contact-item a:hover {
+  color: #b1c9fe;
+}
+
+.copy {
+  opacity: .8;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+@media (max-width: 900px) {
+  .about-container {
+    flex-direction: column-reverse;
+    padding: 160px 20px 80px;
+  }
+
+  .card {
+    max-width: 100%;
+    padding: 35px 25px;
+  }
+
+  .about-image img {
+    max-width: 150px;
+  }
+
+  .header_links {
+    gap: 20px;
+  }
+
+  .header_links button {
+    font-size: 16px;
+  }
+
+  .footer-contact {
+    gap: 20px;
+  }
+
+  .contact-item {
+    padding: 10px 16px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 500px) {
+  .footer-title {
+    font-size: 1.05rem;
+  }
+
+  .footer-contact {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .contact-item {
+    justify-content: center;
+    width: 100%;
+    padding: 10px 14px;
+    font-size: 13px;
+  }
+
+  .copy {
+    font-size: 13px;
+  }
+}
+
+/*# sourceMappingURL=app_about_about_5555ae28.css.map*/

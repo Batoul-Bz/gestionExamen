@@ -1,0 +1,191 @@
+/* [project]/app/Home.css [app-client] (css) */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Poppins, sans-serif;
+}
+
+body, .page {
+  flex-direction: column;
+  min-height: 100vh;
+  display: flex;
+}
+
+.header {
+  z-index: 999;
+  background-color: #192338;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 15px 30px;
+  display: flex;
+  position: fixed;
+  top: 0;
+}
+
+.logo-text {
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.header_links {
+  align-items: center;
+  gap: 40px;
+  display: flex;
+}
+
+.header_links button {
+  color: #fff;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 10px 0;
+  font-size: 20px;
+  font-weight: 500;
+  transition: all .3s;
+}
+
+.header_links button:hover {
+  color: #b1c9fe;
+  transform: translateY(-3px);
+}
+
+.home-content {
+  background: linear-gradient(135deg, #192338 0%, #4f63d6 50%, #8d9df2 100%);
+  flex-direction: column;
+  flex: 1;
+  padding: 160px 40px 40px;
+  display: flex;
+}
+
+.hero {
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 40px;
+  display: flex;
+}
+
+.hero-img {
+  width: 100%;
+  max-width: 700px;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+.cta {
+  color: #192338;
+  cursor: pointer;
+  background: #b8c7ff;
+  border: none;
+  border-radius: 35px;
+  padding: 18px 40px;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all .3s;
+  display: inline-block;
+}
+
+.cta:hover {
+  background: #97b3ff;
+  transform: translateY(-5px);
+}
+
+.features {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  display: flex;
+}
+
+.feature-card {
+  text-align: center;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  background: #ffffff1f;
+  border: 1px solid #fff3;
+  border-radius: 18px;
+  width: 360px;
+  padding: 40px;
+  transition: transform .3s, box-shadow .3s;
+  box-shadow: 0 10px 30px #00000059;
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px #00000073;
+}
+
+.feature-card h3 {
+  color: #b8c7ff;
+  margin-bottom: 12px;
+  font-size: 22px;
+}
+
+.feature-card p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.footer {
+  background-color: #192338;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 15px;
+  display: flex;
+}
+
+.footer .logo-text {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+@media (max-width: 900px) {
+  .header_links {
+    gap: 20px;
+  }
+
+  .header_links button {
+    font-size: 16px;
+  }
+
+  .logo-text {
+    font-size: 24px;
+  }
+
+  .hero-img {
+    max-width: 550px;
+  }
+
+  .feature-card {
+    width: 48%;
+    padding: 35px;
+  }
+}
+
+@media (max-width: 500px) {
+  .feature-card {
+    width: 90%;
+    padding: 25px;
+  }
+
+  .hero-img {
+    max-width: 90%;
+  }
+
+  .logo-text {
+    font-size: 20px;
+  }
+
+  .header {
+    padding: 15px 20px;
+  }
+}
+
+/*# sourceMappingURL=app_Home_45fd8422.css.map*/

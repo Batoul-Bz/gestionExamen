@@ -1,0 +1,7 @@
+{
+  "/Login/page": "app/Login/page.js",
+  "/chef_departement/Planning/page": "app/chef_departement/Planning/page.js",
+  "/chef_departement/dashboard/page": "app/chef_departement/dashboard/page.js",
+  "/chef_departement/profile/page": "app/chef_departement/profile/page.js",
+  "/page": "app/page.js"
+}

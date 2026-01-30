@@ -1,0 +1,222 @@
+/* [project]/app/Login/Login.css [app-client] (css) */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Poppins, sans-serif;
+}
+
+body, .page {
+  flex-direction: column;
+  min-height: 100vh;
+  display: flex;
+}
+
+.header {
+  z-index: 999;
+  background-color: #192338;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 15px 30px;
+  display: flex;
+  position: fixed;
+  top: 0;
+}
+
+.logo-text {
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.header_links {
+  align-items: center;
+  gap: 40px;
+  display: flex;
+}
+
+.header_links button {
+  color: #fff;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 10px 0;
+  font-size: 20px;
+  font-weight: 500;
+  transition: all .3s;
+}
+
+.header_links button:hover {
+  color: #b1c9fe;
+  transform: translateY(-3px);
+}
+
+.login {
+  background: linear-gradient(135deg, #192338 0% 20%, #4f63d6 78%, #8d9df2 90%, #fff 100%);
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  padding: 160px 40px 40px;
+  display: flex;
+}
+
+.logi {
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+  display: flex;
+}
+
+.login img {
+  object-fit: contain;
+  width: 700px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.login-card {
+  z-index: 10;
+  -webkit-backdrop-filter: blur(18px);
+  backdrop-filter: blur(18px);
+  background: #fff3;
+  border-radius: 26px;
+  flex-direction: column;
+  align-items: center;
+  width: 320px;
+  padding: 32px 28px 40px;
+  display: flex;
+  box-shadow: 0 18px 40px #00000059;
+}
+
+.login-card h2 {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 24px;
+  font-size: 32px;
+}
+
+.field {
+  width: 100%;
+  margin-bottom: 18px;
+}
+
+.field label {
+  opacity: .85;
+  color: #fff;
+  margin-bottom: 6px;
+  font-size: 14px;
+  display: block;
+}
+
+.field input {
+  color: #fff;
+  background: #071e61;
+  border: none;
+  border-radius: 999px;
+  outline: none;
+  width: 100%;
+  padding: 10px 16px;
+  font-size: 16px;
+}
+
+.field input::placeholder {
+  color: #cfd5ff;
+}
+
+.error {
+  color: #ff6b6b;
+  margin-top: 4px;
+  font-size: 12px;
+  display: block;
+}
+
+.submit-btn {
+  color: #13325a;
+  cursor: pointer;
+  background: #9ed1ff;
+  border: none;
+  border-radius: 12px;
+  width: 60px;
+  height: 40px;
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  transition: all .3s;
+}
+
+.submit-btn:hover {
+  background: #7bc1ff;
+  transform: translateY(-2px);
+}
+
+.footer {
+  background-color: #192338;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  height: 20px;
+  padding: 10px;
+  display: flex;
+}
+
+.footer .logo-text {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+@media (max-width: 900px) {
+  .header_links {
+    gap: 20px;
+  }
+
+  .header_links button {
+    font-size: 16px;
+  }
+
+  .logo-text {
+    font-size: 24px;
+  }
+
+  .logi {
+    text-align: center;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .login img {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 500px) {
+  .header {
+    padding: 15px 20px;
+  }
+
+  .logo-text {
+    font-size: 20px;
+  }
+
+  .login-card {
+    width: 90%;
+    max-width: 320px;
+  }
+
+  .login {
+    padding: 140px 20px 40px;
+  }
+
+  .logi {
+    gap: 30px;
+  }
+
+  .login img {
+    max-width: 300px;
+  }
+}
+
+/*# sourceMappingURL=app_Login_Login_14d48b4b.css.map*/

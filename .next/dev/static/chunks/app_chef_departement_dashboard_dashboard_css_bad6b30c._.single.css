@@ -1,0 +1,190 @@
+/* [project]/app/chef_departement/dashboard/dashboard.css [app-client] (css) */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Inter, sans-serif;
+}
+
+body {
+  background: #f3f4f6;
+}
+
+.page {
+  min-height: 100vh;
+}
+
+.layout {
+  padding-top: 70px;
+  display: flex;
+}
+
+.content {
+  flex: 1;
+  margin-left: 150px;
+  padding: 25px;
+  transition: all .3s;
+}
+
+.content-open {
+  margin-left: 80px;
+}
+
+.dash-main {
+  flex-direction: column;
+  gap: 30px;
+  display: flex;
+}
+
+.dash-stats {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  display: grid;
+}
+
+.stat-card {
+  background: #5b5fc7;
+  border-radius: 16px;
+  padding: 22px;
+  position: relative;
+}
+
+.stat-number {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.stat-label {
+  color: #e5e7eb;
+  font-size: 14px;
+}
+
+.stat-icon {
+  opacity: .25;
+  width: 50px;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+}
+
+.dash-section {
+  background: #fff;
+  border-radius: 18px;
+  padding: 25px;
+}
+
+.section-title {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.fake-pie {
+  background: conic-gradient(#3b82f6 0 40%, #8b5cf6 40% 70%, #9ca3af 70% 100%);
+  border-radius: 50%;
+  width: 160px;
+  height: 160px;
+}
+
+.pie-row {
+  align-items: center;
+  gap: 30px;
+  display: flex;
+}
+
+.dot {
+  border-radius: 4px;
+  width: 12px;
+  height: 12px;
+  margin-right: 8px;
+  display: inline-block;
+}
+
+.dot-blue {
+  background: #3b82f6;
+}
+
+.dot-purple {
+  background: #8b5cf6;
+}
+
+.dot-grey {
+  background: #9ca3af;
+}
+
+.dot-dark {
+  background: #1f2937;
+}
+
+.dot-light {
+  background: #9ca3af;
+}
+
+.bar-chart {
+  align-items: flex-end;
+  gap: 20px;
+  display: flex;
+}
+
+.bar-group {
+  gap: 6px;
+  display: flex;
+}
+
+.bar {
+  color: #fff;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: flex-end;
+  width: 35px;
+  padding-bottom: 6px;
+  font-weight: bold;
+  display: flex;
+}
+
+.bar-dark {
+  background: linear-gradient(#34495e, #2c3e50);
+}
+
+.bar-light {
+  background: linear-gradient(#b2bec3, #95a5a6);
+}
+
+.bar-day {
+  text-align: center;
+  color: #6b7280;
+  margin-top: 8px;
+}
+
+.history-list {
+  flex-direction: column;
+  gap: 15px;
+  display: flex;
+}
+
+.history-row {
+  background: #f9fafb;
+  border-radius: 12px;
+  justify-content: space-between;
+  padding: 18px;
+  display: flex;
+}
+
+.history-title {
+  font-weight: 600;
+}
+
+.history-desc {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.history-btn {
+  background: #e5e7eb;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 12px;
+}
+
+/*# sourceMappingURL=app_chef_departement_dashboard_dashboard_css_bad6b30c._.single.css.map*/
