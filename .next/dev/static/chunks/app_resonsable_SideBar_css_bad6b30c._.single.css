@@ -1,0 +1,93 @@
+/* [project]/app/resonsable/SideBar.css [app-client] (css) */
+.sidebar {
+  color: #fff;
+  z-index: 100;
+  background: linear-gradient(#0b1a57, #132c7c);
+  flex-direction: column;
+  justify-content: space-between;
+  width: 60px;
+  height: calc(100vh - 70px);
+  padding: 16px 8px;
+  transition: width .3s;
+  display: flex;
+  position: fixed;
+  top: 70px;
+  left: 0;
+  overflow: hidden;
+}
+
+.sidebar:hover {
+  width: 220px;
+}
+
+.sidebar nav ul, .bottom-icons ul {
+  margin-top: 45px;
+  padding: 0;
+  list-style: none;
+}
+
+.menu-item, .menu-toggle {
+  cursor: pointer;
+  border-radius: 10px;
+  align-items: center;
+  gap: 14px;
+  margin: 10px 0;
+  padding: 10px;
+  transition: all .25s;
+  display: flex;
+}
+
+.icon {
+  text-align: center;
+  min-width: 36px;
+  font-size: 1.4rem;
+}
+
+.label {
+  opacity: 0;
+  white-space: nowrap;
+  font-size: 14px;
+  transition: opacity .3s;
+}
+
+.sidebar:hover .label {
+  opacity: 1;
+}
+
+.menu-item:hover, .menu-toggle:hover {
+  background-color: #ffffff1f;
+  transform: translateX(4px);
+}
+
+.menu-item.active {
+  color: #0b1a57;
+  background-color: #fff;
+}
+
+.menu-item.active .icon {
+  color: #0b1a57;
+}
+
+.bottom-icons {
+  margin-bottom: 20px;
+}
+
+.logout:hover {
+  background-color: #ff000026;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 55px;
+  }
+
+  .sidebar:hover {
+    width: 180px;
+  }
+
+  .label {
+    font-size: 13px;
+  }
+}
+
+/*# sourceMappingURL=app_resonsable_SideBar_css_bad6b30c._.single.css.map*/

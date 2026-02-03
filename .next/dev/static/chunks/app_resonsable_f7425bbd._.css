@@ -1,0 +1,404 @@
+/* [project]/app/resonsable/styles.css [app-client] (css) */
+.top-bar {
+  z-index: 200;
+  background-color: #0b1a57;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  padding: 0 25px;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 3px 8px #00000026;
+}
+
+.logo-text {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.user-box {
+  align-items: center;
+  gap: 15px;
+  display: flex;
+  position: relative;
+}
+
+.notif-wrapper {
+  position: relative;
+}
+
+.notif-btn {
+  color: #fff;
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 1.3rem;
+  position: relative;
+}
+
+.notif-badge {
+  background: red;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.notif-dropdown {
+  color: #0b1a57;
+  z-index: 300;
+  background: #fff;
+  border-radius: 12px;
+  flex-direction: column;
+  width: 260px;
+  padding: 10px 0;
+  display: flex;
+  position: absolute;
+  top: 45px;
+  right: 0;
+  box-shadow: 0 6px 20px #0003;
+}
+
+.notif-item {
+  border-bottom: 1px solid #eee;
+  flex-direction: column;
+  gap: 4px;
+  padding: 10px 16px;
+  display: flex;
+}
+
+.notif-item:last-child {
+  border-bottom: none;
+}
+
+.notif-text {
+  font-size: 14px;
+}
+
+.notif-time {
+  color: #888;
+  font-size: 12px;
+}
+
+.user-info {
+  cursor: pointer;
+  background: #fff;
+  border: none;
+  border-radius: 12px;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 12px;
+  display: flex;
+}
+
+.user-avatar {
+  color: #fff;
+  background: #0b1a57;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  display: flex;
+}
+
+.user-text-main {
+  color: #0b1a57;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.user-text-sub {
+  color: #666;
+  font-size: 12px;
+}
+
+/* [project]/app/resonsable/SideBar.css [app-client] (css) */
+.sidebar {
+  color: #fff;
+  z-index: 100;
+  background: linear-gradient(#0b1a57, #132c7c);
+  flex-direction: column;
+  justify-content: space-between;
+  width: 60px;
+  height: calc(100vh - 70px);
+  padding: 16px 8px;
+  transition: width .3s;
+  display: flex;
+  position: fixed;
+  top: 70px;
+  left: 0;
+  overflow: hidden;
+}
+
+.sidebar:hover {
+  width: 220px;
+}
+
+.sidebar nav ul, .bottom-icons ul {
+  margin-top: 45px;
+  padding: 0;
+  list-style: none;
+}
+
+.menu-item, .menu-toggle {
+  cursor: pointer;
+  border-radius: 10px;
+  align-items: center;
+  gap: 14px;
+  margin: 10px 0;
+  padding: 10px;
+  transition: all .25s;
+  display: flex;
+}
+
+.icon {
+  text-align: center;
+  min-width: 36px;
+  font-size: 1.4rem;
+}
+
+.label {
+  opacity: 0;
+  white-space: nowrap;
+  font-size: 14px;
+  transition: opacity .3s;
+}
+
+.sidebar:hover .label {
+  opacity: 1;
+}
+
+.menu-item:hover, .menu-toggle:hover {
+  background-color: #ffffff1f;
+  transform: translateX(4px);
+}
+
+.menu-item.active {
+  color: #0b1a57;
+  background-color: #fff;
+}
+
+.menu-item.active .icon {
+  color: #0b1a57;
+}
+
+.bottom-icons {
+  margin-bottom: 20px;
+}
+
+.logout:hover {
+  background-color: #ff000026;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 55px;
+  }
+
+  .sidebar:hover {
+    width: 180px;
+  }
+
+  .label {
+    font-size: 13px;
+  }
+}
+
+/* [project]/app/resonsable/dashboard/dashboard.css [app-client] (css) */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Inter, sans-serif;
+}
+
+body {
+  background: #f3f4f6;
+}
+
+.page {
+  min-height: 100vh;
+}
+
+.layout {
+  padding-top: 70px;
+  display: flex;
+}
+
+.content {
+  flex: 1;
+  margin-left: 150px;
+  padding: 25px;
+  transition: all .3s;
+}
+
+.content-open {
+  margin-left: 80px;
+}
+
+.dash-main {
+  flex-direction: column;
+  gap: 30px;
+  display: flex;
+}
+
+.dash-stats {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  display: grid;
+}
+
+.stat-card {
+  background: #5b5fc7;
+  border-radius: 16px;
+  padding: 22px;
+  position: relative;
+}
+
+.stat-number {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.stat-label {
+  color: #e5e7eb;
+  font-size: 14px;
+}
+
+.stat-icon {
+  opacity: .25;
+  width: 50px;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+}
+
+.dash-section {
+  background: #fff;
+  border-radius: 18px;
+  padding: 25px;
+}
+
+.section-title {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.fake-pie {
+  background: conic-gradient(#3b82f6 0 40%, #8b5cf6 40% 70%, #9ca3af 70% 100%);
+  border-radius: 50%;
+  width: 160px;
+  height: 160px;
+}
+
+.pie-row {
+  align-items: center;
+  gap: 30px;
+  display: flex;
+}
+
+.dot {
+  border-radius: 4px;
+  width: 12px;
+  height: 12px;
+  margin-right: 8px;
+  display: inline-block;
+}
+
+.dot-blue {
+  background: #3b82f6;
+}
+
+.dot-purple {
+  background: #8b5cf6;
+}
+
+.dot-grey {
+  background: #9ca3af;
+}
+
+.dot-dark {
+  background: #1f2937;
+}
+
+.dot-light {
+  background: #9ca3af;
+}
+
+.bar-chart {
+  align-items: flex-end;
+  gap: 20px;
+  display: flex;
+}
+
+.bar-group {
+  gap: 6px;
+  display: flex;
+}
+
+.bar {
+  color: #fff;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: flex-end;
+  width: 35px;
+  padding-bottom: 6px;
+  font-weight: bold;
+  display: flex;
+}
+
+.bar-dark {
+  background: linear-gradient(#34495e, #2c3e50);
+}
+
+.bar-light {
+  background: linear-gradient(#b2bec3, #95a5a6);
+}
+
+.bar-day {
+  text-align: center;
+  color: #6b7280;
+  margin-top: 8px;
+}
+
+.history-list {
+  flex-direction: column;
+  gap: 15px;
+  display: flex;
+}
+
+.history-row {
+  background: #f9fafb;
+  border-radius: 12px;
+  justify-content: space-between;
+  padding: 18px;
+  display: flex;
+}
+
+.history-title {
+  font-weight: 600;
+}
+
+.history-desc {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.history-btn {
+  background: #e5e7eb;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 12px;
+}
+
+/*# sourceMappingURL=app_resonsable_f7425bbd._.css.map*/
